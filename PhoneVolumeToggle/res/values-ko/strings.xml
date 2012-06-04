@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="toggle_silent_mode">닮은을 전환</string>
+    
+    <string name="hello">토글 닮은</string>
+    <string name="app_name">토글 닮은</string>
+</resources>

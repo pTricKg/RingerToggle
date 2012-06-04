@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="toggle_silent_mode">переключение звонка</string>
+    
+    <string name="hello">звонок переключатель</string>
+    <string name="app_name">звонок переключатель</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="toggle_silent_mode">Toggle Ringer</string>
+    
+    <string name="hello">Ringer Toggle</string>
+    <string name="app_name">Ringer Toggle</string>
+</resources>

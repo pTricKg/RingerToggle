@@ -33,6 +33,7 @@ public final class R {
         public static final int toggle_silent_mode=0x7f050000;
     }
     public static final class xml {
-        public static final int widget_provider=0x7f040000;
+        public static final int strings=0x7f040000;
+        public static final int widget_provider=0x7f040001;
     }
 }
