@@ -12,6 +12,7 @@ import android.media.AudioManager;
 import android.widget.RemoteViews;
 
 public class AppWidget extends AppWidgetProvider {
+	
 @Override
 	public void onReceive(Context context, Intent intent) {
 		if (intent.getAction() == null) {
