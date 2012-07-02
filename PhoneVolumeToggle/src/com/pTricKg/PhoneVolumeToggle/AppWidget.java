@@ -46,14 +46,14 @@ public class AppWidget extends AppWidgetProvider {
 			
 			AudioManager audioManager = (AudioManager)context.getSystemService(Activity.AUDIO_SERVICE);
 				
-				if(audioManager.getRingerMode() == AudioManager.RINGER_MODE_SILENT) {
-					updateViews.setImageViewResource(R.id.phoneState, R.drawable.phone_state_normal);
-					
-					audioManager.setRingerMode(AudioManager.RINGER_MODE_NORMAL);
-				}else {
+				if(audioManager.getRingerMode() == AudioManager.RINGER_MODE_NORMAL) {
 					updateViews.setImageViewResource(R.id.phoneState, R.drawable.phone_state_silent);
 					
 					audioManager.setRingerMode(AudioManager.RINGER_MODE_SILENT);
+				}else {
+					updateViews.setImageViewResource(R.id.phoneState, R.drawable.phone_state_normal);
+					
+					audioManager.setRingerMode(AudioManager.RINGER_MODE_NORMAL);
 				}
 				Intent i = new Intent(this, AppWidget.class);
 				
