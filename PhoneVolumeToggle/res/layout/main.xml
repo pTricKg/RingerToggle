@@ -12,7 +12,8 @@
     	android:layout_gravity="center_horizontal"
     	android:src="@drawable/phone_on" 
     	android:paddingBottom="20dp" 
-    	android:paddingTop="20dp"/>
+    	android:paddingTop="20dp"
+    	android:contentDescription="@string/app_name"/>
     <Button 
 		android:id="@+id/toggleButton"
 		android:layout_width="wrap_content"

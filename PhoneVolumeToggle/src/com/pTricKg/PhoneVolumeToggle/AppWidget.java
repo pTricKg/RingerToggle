@@ -12,8 +12,7 @@ import android.media.AudioManager;
 import android.widget.RemoteViews;
 
 public class AppWidget extends AppWidgetProvider {
-	
-    @Override
+@Override
 	public void onReceive(Context context, Intent intent) {
 		if (intent.getAction() == null) {
 			context.startService(new Intent(context, ToggleService.class));

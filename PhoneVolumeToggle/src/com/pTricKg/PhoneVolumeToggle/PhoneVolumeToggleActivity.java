@@ -18,6 +18,7 @@ public class PhoneVolumeToggleActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         
+        
         //initializing AudioManager variable
         mAudioManager = (AudioManager)getSystemService(AUDIO_SERVICE);
         
@@ -35,7 +36,8 @@ public class PhoneVolumeToggleActivity extends Activity {
         toggleButton.setOnClickListener(new View.OnClickListener() {
 			
 			public void onClick(View v) {
-								
+				
+				
 				//this turns ringer on if silent is false.
 				//otherwise, turns ringer off.
 				if(mPhoneIsSilent) {
