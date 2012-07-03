@@ -5,8 +5,7 @@ import android.graphics.drawable.Drawable;
 import android.media.AudioManager;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
+import android.widget.ImageButton;
 
 public class PhoneVolumeToggleActivity extends Activity {
     	
@@ -32,7 +31,7 @@ public class PhoneVolumeToggleActivity extends Activity {
 
 	private void setButtonClickListener() {
 		
-		Button toggleButton = (Button)findViewById(R.id.toggleButton);
+		ImageButton toggleButton = (ImageButton)findViewById(R.id.toggleButton);
         toggleButton.setOnClickListener(new View.OnClickListener() {
 			
 			public void onClick(View v) {
@@ -71,7 +70,7 @@ public class PhoneVolumeToggleActivity extends Activity {
 //makes layout switch
 private void toggleUi() {
 	
-	ImageView imageView = (ImageView) findViewById(R.id.phone_icon);
+	ImageButton imageButton = (ImageButton) findViewById(R.id.toggleButton);
 	Drawable newPhoneImage;
 	
 	if (mPhoneIsSilent) {
@@ -79,7 +78,7 @@ private void toggleUi() {
 	}else {
 		newPhoneImage = getResources().getDrawable(R.drawable.phone_on);
 	}
-	imageView.setImageDrawable(newPhoneImage);
+	imageButton.setImageDrawable(newPhoneImage);
 }
 //makes sure to check ringer state when user resumes activity
 @Override
