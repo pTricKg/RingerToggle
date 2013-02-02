@@ -49,6 +49,10 @@ public class AppWidget extends AppWidgetProvider {
 					updateViews.setImageViewResource(R.id.phoneState, R.drawable.phone_state_normal);
 					
 					audioManager.setRingerMode(AudioManager.RINGER_MODE_NORMAL);
+				}else if(audioManager.getRingerMode() == AudioManager.RINGER_MODE_NORMAL) {
+					updateViews.setImageViewResource(R.id.phoneState, R.drawable.phone_state_vibrate);
+					
+					audioManager.setRingerMode(AudioManager.RINGER_MODE_VIBRATE);
 				}else {
 					updateViews.setImageViewResource(R.id.phoneState, R.drawable.phone_state_silent);
 					

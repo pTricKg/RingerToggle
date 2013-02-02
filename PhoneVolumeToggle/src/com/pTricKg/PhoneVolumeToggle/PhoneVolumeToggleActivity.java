@@ -39,31 +39,50 @@ public class PhoneVolumeToggleActivity extends Activity {
 				
 				//this turns ringer on if silent is false.
 				//otherwise, turns ringer off.
-				if(mPhoneIsSilent) {
+				if(mPhoneIsSilent == true) {
 					//change to Normal
 					mAudioManager
 						.setRingerMode(AudioManager.RINGER_MODE_NORMAL);
 					mPhoneIsSilent = false;
-				}else {
+				}else{
 					//change to silent
 					mAudioManager
 						.setRingerMode(AudioManager.RINGER_MODE_SILENT);
 						mPhoneIsSilent = true;
 				}
+//						else {
+//					mAudioManager
+//					.setRingerMode(AudioManager.RINGER_MODE_VIBRATE);
+//				}
 				
 				//toggle UI
 				toggleUi();
 			}
 
 			});
+        
+        toggleButton.setOnLongClickListener(new View.OnLongClickListener() {
+        	ImageButton imageButton1 = (ImageButton) findViewById(R.id.toggleButton);
+        	public boolean onLongClick(View v) {
+            	//change to Vibrate
+				mAudioManager
+					.setRingerMode(AudioManager.RINGER_MODE_VIBRATE);
+				imageButton1.getResources().getDrawable(R.drawable.phone_vibrate);
+				return true;
+				
+				} 
+        	
+          });
 	}
 	private void checkIfPhoneIsSilent() {
 		
 		int ringerMode = mAudioManager.getRingerMode();
 		if (ringerMode == AudioManager.RINGER_MODE_SILENT) {
 			mPhoneIsSilent = true;
-		}else {
+		}else if (ringerMode == AudioManager.RINGER_MODE_NORMAL){
 			mPhoneIsSilent = false;
+		}else {
+			
 		}
 	}
 
@@ -73,10 +92,12 @@ private void toggleUi() {
 	ImageButton imageButton = (ImageButton) findViewById(R.id.toggleButton);
 	Drawable newPhoneImage;
 	
-	if (mPhoneIsSilent) {
+	if (mPhoneIsSilent == true) {
 		newPhoneImage = getResources().getDrawable(R.drawable.phone_silent);
-	}else {
+	}else if(mPhoneIsSilent == false) {
 		newPhoneImage = getResources().getDrawable(R.drawable.phone_on);
+	}else {
+		newPhoneImage = getResources().getDrawable(R.drawable.phone_vibrate);
 	}
 	imageButton.setImageDrawable(newPhoneImage);
 }
