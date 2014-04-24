@@ -64,5 +64,6 @@ public class AppWidget extends AppWidgetProvider {
 				updateViews.setOnClickPendingIntent(R.id.phoneState, pi);
 				return updateViews;
 		}
+		
 	}
 }
