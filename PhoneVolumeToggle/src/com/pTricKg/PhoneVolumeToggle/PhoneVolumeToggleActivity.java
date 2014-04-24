@@ -1,11 +1,14 @@
 package com.pTricKg.PhoneVolumeToggle;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.media.AudioManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class PhoneVolumeToggleActivity extends Activity {
     	
@@ -16,7 +19,6 @@ public class PhoneVolumeToggleActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        
         
         //initializing AudioManager variable
         mAudioManager = (AudioManager)getSystemService(AUDIO_SERVICE);
@@ -35,8 +37,15 @@ public class PhoneVolumeToggleActivity extends Activity {
         toggleButton.setOnClickListener(new View.OnClickListener() {
 			
 			public void onClick(View v) {
-				
-				
+
+		        //message to say can long-press for vibrate
+				Context context = getApplicationContext();
+				CharSequence text = "Please long-press to set ringer to vibrate.";
+				int duration = Toast.LENGTH_SHORT;
+
+				Toast toast = Toast.makeText(context, text, duration);
+				toast.show();		
+				   
 				//this turns ringer on if silent is false.
 				//otherwise, turns ringer off.
 				if(mPhoneIsSilent == true) {
@@ -50,19 +59,17 @@ public class PhoneVolumeToggleActivity extends Activity {
 						.setRingerMode(AudioManager.RINGER_MODE_SILENT);
 						mPhoneIsSilent = true;
 				}
-//						else {
-//					mAudioManager
-//					.setRingerMode(AudioManager.RINGER_MODE_VIBRATE);
-//				}
-				
-				//toggle UI
+
+				//calling to toggle UI
 				toggleUi();
+				
 			}
 
 			});
         
-        toggleButton.setOnLongClickListener(new View.OnLongClickListener() {
-        	ImageButton imageButton1 = (ImageButton) findViewById(R.id.toggleButton);
+        	toggleButton.setOnLongClickListener(new View.OnLongClickListener() {
+        	@SuppressLint("CutPasteId")
+			ImageButton imageButton1 = (ImageButton) findViewById(R.id.toggleButton);
         	Drawable newPhoneImage1;
         	public boolean onLongClick(View v) {
             	//change to Vibrate
@@ -73,7 +80,6 @@ public class PhoneVolumeToggleActivity extends Activity {
 				return true;
 				
 				} 
-        	//newPhoneImage1 = getResources().getDrawable(R.drawable.phone_vibrate);
         	
           });
 	}
@@ -91,7 +97,7 @@ public class PhoneVolumeToggleActivity extends Activity {
 
 //makes layout switch
 private void toggleUi() {
-	
+		
 	ImageButton imageButton = (ImageButton) findViewById(R.id.toggleButton);
 	Drawable newPhoneImage;
 	
