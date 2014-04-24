@@ -44,15 +44,16 @@ public class PhoneVolumeToggleActivity extends Activity {
 					mAudioManager
 						.setRingerMode(AudioManager.RINGER_MODE_NORMAL);
 					mPhoneIsSilent = false;
-				}else if(mPhoneIsSilent == false){
+				}else{
 					//change to silent
 					mAudioManager
 						.setRingerMode(AudioManager.RINGER_MODE_SILENT);
 						mPhoneIsSilent = true;
-				}else {
-					mAudioManager
-					.setRingerMode(AudioManager.RINGER_MODE_VIBRATE);
 				}
+//						else {
+//					mAudioManager
+//					.setRingerMode(AudioManager.RINGER_MODE_VIBRATE);
+//				}
 				
 				//toggle UI
 				toggleUi();
@@ -62,15 +63,18 @@ public class PhoneVolumeToggleActivity extends Activity {
         
         toggleButton.setOnLongClickListener(new View.OnLongClickListener() {
         	ImageButton imageButton1 = (ImageButton) findViewById(R.id.toggleButton);
+        	Drawable newPhoneImage1;
         	public boolean onLongClick(View v) {
             	//change to Vibrate
 				mAudioManager
 					.setRingerMode(AudioManager.RINGER_MODE_VIBRATE);
-				imageButton1.getResources().getDrawable(R.drawable.phone_vibrate);
+				newPhoneImage1 = getResources().getDrawable(R.drawable.phone_vibrate);
+				imageButton1.setImageDrawable(newPhoneImage1);
 				return true;
 				
 				} 
-        		
+        	//newPhoneImage1 = getResources().getDrawable(R.drawable.phone_vibrate);
+        	
           });
 	}
 	private void checkIfPhoneIsSilent() {
@@ -80,6 +84,8 @@ public class PhoneVolumeToggleActivity extends Activity {
 			mPhoneIsSilent = true;
 		}else if (ringerMode == AudioManager.RINGER_MODE_NORMAL){
 			mPhoneIsSilent = false;
+		}else {
+			
 		}
 	}
 
@@ -91,12 +97,12 @@ private void toggleUi() {
 	
 	if (mPhoneIsSilent == true) {
 		newPhoneImage = getResources().getDrawable(R.drawable.phone_silent);
-	}else if(mPhoneIsSilent == false) {
+	}else{
 		newPhoneImage = getResources().getDrawable(R.drawable.phone_on);
-	}else {
-		newPhoneImage = getResources().getDrawable(R.drawable.phone_vibrate);
 	}
+	
 	imageButton.setImageDrawable(newPhoneImage);
+	
 }
 //makes sure to check ringer state when user resumes activity
 @Override

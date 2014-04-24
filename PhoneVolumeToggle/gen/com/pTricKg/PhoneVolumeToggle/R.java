@@ -13,12 +13,13 @@ public final class R {
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
         public static final int icon=0x7f020001;
-        public static final int phone_on=0x7f020002;
-        public static final int phone_silent=0x7f020003;
-        public static final int phone_state_normal=0x7f020004;
-        public static final int phone_state_silent=0x7f020005;
-        public static final int phone_state_vibrate=0x7f020006;
-        public static final int phone_vibrate=0x7f020007;
+        public static final int phone_icon=0x7f020002;
+        public static final int phone_on=0x7f020003;
+        public static final int phone_silent=0x7f020004;
+        public static final int phone_state_normal=0x7f020005;
+        public static final int phone_state_silent=0x7f020006;
+        public static final int phone_state_vibrate=0x7f020007;
+        public static final int phone_vibrate=0x7f020008;
     }
     public static final class id {
         public static final int phoneState=0x7f060001;
