@@ -44,16 +44,15 @@ public class PhoneVolumeToggleActivity extends Activity {
 					mAudioManager
 						.setRingerMode(AudioManager.RINGER_MODE_NORMAL);
 					mPhoneIsSilent = false;
-				}else{
+				}else if(mPhoneIsSilent == false){
 					//change to silent
 					mAudioManager
 						.setRingerMode(AudioManager.RINGER_MODE_SILENT);
 						mPhoneIsSilent = true;
+				}else {
+					mAudioManager
+					.setRingerMode(AudioManager.RINGER_MODE_VIBRATE);
 				}
-//						else {
-//					mAudioManager
-//					.setRingerMode(AudioManager.RINGER_MODE_VIBRATE);
-//				}
 				
 				//toggle UI
 				toggleUi();
@@ -71,7 +70,7 @@ public class PhoneVolumeToggleActivity extends Activity {
 				return true;
 				
 				} 
-        	
+        		
           });
 	}
 	private void checkIfPhoneIsSilent() {
@@ -81,8 +80,6 @@ public class PhoneVolumeToggleActivity extends Activity {
 			mPhoneIsSilent = true;
 		}else if (ringerMode == AudioManager.RINGER_MODE_NORMAL){
 			mPhoneIsSilent = false;
-		}else {
-			
 		}
 	}
 
