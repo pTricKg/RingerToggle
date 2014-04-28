@@ -71,6 +71,7 @@ public class AppWidget extends AppWidgetProvider {
 			PendingIntent pi = PendingIntent.getBroadcast(context, 0, i, 0);
 			updateViews.setOnClickPendingIntent(R.id.phoneState, pi);
 			return updateViews;
+			
 		}
 
 	}
