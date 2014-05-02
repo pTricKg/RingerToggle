@@ -1,13 +1,20 @@
 package com.pTricKg.PhoneVolumeToggle;
 
 import android.app.Activity;
+import android.appwidget.AppWidgetManager;
+import android.content.ComponentName;
+import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.media.AudioManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class PhoneVolumeToggleActivity extends Activity {
+
+	private static final String TAG = "PhoneVolumeToggleActivity";
 
 	private AudioManager mAudioManager;
 	private boolean mPhoneIsSilent;
@@ -15,6 +22,7 @@ public class PhoneVolumeToggleActivity extends Activity {
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
+		Log.e(TAG, "onCreate");
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 
@@ -35,10 +43,11 @@ public class PhoneVolumeToggleActivity extends Activity {
 		 * with using ImageButton instead of Button.. now trying fix with
 		 * removal of auto-updater..
 		 */
-		ImageButton toggleButton = (ImageButton) findViewById(R.id.toggleButton);
+		final ImageButton toggleButton = (ImageButton) findViewById(R.id.toggleButton);
 		toggleButton.setOnClickListener(new View.OnClickListener() {
 
 			public void onClick(View v) {
+				Log.e(TAG, "onClick");
 				// this checks to see what to set
 				// if silent, turns on, if on , turn off. otherwise, switches to
 				// vibrate mode
@@ -49,12 +58,12 @@ public class PhoneVolumeToggleActivity extends Activity {
 					mPhoneIsSilent = false;
 					mPhoneIsVibrate = false;
 
-					// Context context = getApplicationContext();
-					// CharSequence text = "Ringer On";
-					// int duration = Toast.LENGTH_SHORT;
-					//
-					// Toast toast = Toast.makeText(context, text, duration);
-					// toast.show();
+					Context context = getApplicationContext();
+					CharSequence text = "Ringer On";
+					int duration = Toast.LENGTH_SHORT;
+
+					Toast toast = Toast.makeText(context, text, duration);
+					toast.show();
 
 				} else if (mPhoneIsVibrate) {
 					// change to silent
@@ -63,12 +72,12 @@ public class PhoneVolumeToggleActivity extends Activity {
 					mPhoneIsSilent = true;
 					mPhoneIsVibrate = false;
 
-					// Context context = getApplicationContext();
-					// CharSequence text = "Ringer Silenced";
-					// int duration = Toast.LENGTH_SHORT;
-					//
-					// Toast toast = Toast.makeText(context, text, duration);
-					// toast.show();
+					Context context = getApplicationContext();
+					CharSequence text = "Ringer Silenced";
+					int duration = Toast.LENGTH_SHORT;
+
+					Toast toast = Toast.makeText(context, text, duration);
+					toast.show();
 
 				} else {
 					mAudioManager
@@ -76,24 +85,24 @@ public class PhoneVolumeToggleActivity extends Activity {
 					mPhoneIsVibrate = true;
 					mPhoneIsSilent = false;
 
-					// Context context = getApplicationContext();
-					// CharSequence text = "Ringer vibrate";
-					// int duration = Toast.LENGTH_SHORT;
-					//
-					// Toast toast = Toast.makeText(context, text, duration);
-					// toast.show();
+					Context context = getApplicationContext();
+					CharSequence text = "Ringer vibrate";
+					int duration = Toast.LENGTH_SHORT;
+
+					Toast toast = Toast.makeText(context, text, duration);
+					toast.show();
 				}
 
 				// calling to toggle UI
 				toggleUi();
-
 			}
-
 		});
 
 	}
 
 	private void checkIfPhoneIsSilent() {
+
+		Log.e(TAG, "checkIfPhoneIsSilent");
 
 		int ringerMode = mAudioManager.getRingerMode();
 		if (ringerMode == AudioManager.RINGER_MODE_SILENT) {
@@ -114,6 +123,8 @@ public class PhoneVolumeToggleActivity extends Activity {
 	// makes layout switch
 	private void toggleUi() {
 
+		Log.e(TAG, "toggleUi");
+
 		ImageButton imageButton = (ImageButton) findViewById(R.id.toggleButton);
 		Drawable newPhoneImage;
 
@@ -132,8 +143,23 @@ public class PhoneVolumeToggleActivity extends Activity {
 	// makes sure to check ringer state when user resumes activity
 	@Override
 	protected void onResume() {
+		Log.e(TAG, "onResume");
 		super.onResume();
 		checkIfPhoneIsSilent();
 		toggleUi();
+		updateWidget();
+
 	}
+
+	// trying to fix widget not updating when app state is changed
+	private void updateWidget() {
+		AppWidgetManager appWidgetManager = AppWidgetManager
+				.getInstance(getApplicationContext());
+		int[] appWidgetIds = appWidgetManager
+				.getAppWidgetIds(new ComponentName(this, AppWidget.class));
+		if (appWidgetIds.length > 0) {
+			new AppWidget().onUpdate(this, appWidgetManager, appWidgetIds);
+		}
+	}
+
 }
