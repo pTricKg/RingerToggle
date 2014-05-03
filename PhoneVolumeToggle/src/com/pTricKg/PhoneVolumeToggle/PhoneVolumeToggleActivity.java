@@ -35,6 +35,7 @@ public class PhoneVolumeToggleActivity extends Activity {
 		// initialize button click listener.
 		// place here to allow ringer state check first, I think!
 		setButtonClickListener();
+		
 	}
 
 	private void setButtonClickListener() {
@@ -43,6 +44,7 @@ public class PhoneVolumeToggleActivity extends Activity {
 		 * with using ImageButton instead of Button.. now trying fix with
 		 * removal of auto-updater..
 		 */
+
 		final ImageButton toggleButton = (ImageButton) findViewById(R.id.toggleButton);
 		toggleButton.setOnClickListener(new View.OnClickListener() {
 
@@ -91,11 +93,12 @@ public class PhoneVolumeToggleActivity extends Activity {
 
 					Toast toast = Toast.makeText(context, text, duration);
 					toast.show();
-				}
 
+				}
 				// calling to toggle UI
 				toggleUi();
 			}
+
 		});
 
 	}
@@ -130,16 +133,20 @@ public class PhoneVolumeToggleActivity extends Activity {
 
 		if (mPhoneIsSilent) {
 			newPhoneImage = getResources().getDrawable(R.drawable.phone_silent);
+
 		} else if (mPhoneIsVibrate) {
 			newPhoneImage = getResources()
 					.getDrawable(R.drawable.phone_vibrate);
+
 		} else {
 			newPhoneImage = getResources().getDrawable(R.drawable.phone_on);
+
 		}
 		imageButton.setImageDrawable(newPhoneImage);
 
 	}
-
+	
+	
 	// makes sure to check ringer state when user resumes activity
 	@Override
 	protected void onResume() {
@@ -147,10 +154,8 @@ public class PhoneVolumeToggleActivity extends Activity {
 		super.onResume();
 		checkIfPhoneIsSilent();
 		toggleUi();
-		updateWidget();
-
 	}
-
+	
 	// trying to fix widget not updating when app state is changed
 	private void updateWidget() {
 		AppWidgetManager appWidgetManager = AppWidgetManager
@@ -161,5 +166,5 @@ public class PhoneVolumeToggleActivity extends Activity {
 			new AppWidget().onUpdate(this, appWidgetManager, appWidgetIds);
 		}
 	}
-
+	
 }

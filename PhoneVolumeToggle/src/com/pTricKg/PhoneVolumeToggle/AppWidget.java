@@ -13,15 +13,16 @@ import android.util.Log;
 import android.widget.RemoteViews;
 
 public class AppWidget extends AppWidgetProvider {
-	
+
 	private static final String TAG = "AppWidget";
-	
+
 	@Override
 	public void onReceive(Context context, Intent intent) {
 		Log.e(TAG,"onReceive");
 		if (intent.getAction() == null) {
 			context.startService(new Intent(context, ToggleService.class));
-		} else {
+			
+		}else {
 			super.onReceive(context, intent);
 		}
 	}
@@ -29,34 +30,35 @@ public class AppWidget extends AppWidgetProvider {
 	@Override
 	public void onUpdate(Context context, AppWidgetManager appWidgetManager,
 			int[] appWidgetIds) {
-		
-		Log.e(TAG,"onUpdate");
+
+		Log.e(TAG, "onUpdate");
 
 		context.startService(new Intent(context, ToggleService.class));
-		
+
 	}
 
 	public static class ToggleService extends IntentService {
-		
+
 		public ToggleService() {
 			super("AppWidget$ToggleService");
+
 		}
 
 		@Override
 		protected void onHandleIntent(Intent intent) {
-			
-			Log.e(TAG,"onHandleIntent");
-			
+
+			Log.e(TAG, "onHandleIntent");
+
 			ComponentName me = new ComponentName(this, AppWidget.class);
 			AppWidgetManager mgr = AppWidgetManager.getInstance(this);
 			mgr.updateAppWidget(me, buildUpdate(this));
+
 		}
-		
 
 		private RemoteViews buildUpdate(Context context) {
 
-			Log.e(TAG,"buildUpdate");
-			
+			Log.e(TAG, "buildUpdate");
+
 			RemoteViews updateViews = new RemoteViews(context.getPackageName(),
 					R.layout.widget);
 
@@ -86,9 +88,7 @@ public class AppWidget extends AppWidgetProvider {
 			PendingIntent pi = PendingIntent.getBroadcast(context, 0, i, 0);
 			updateViews.setOnClickPendingIntent(R.id.phoneState, pi);
 			return updateViews;
-			
+
 		}
-		
 	}
 }
-
