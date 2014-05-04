@@ -7,7 +7,8 @@
     <uses-sdk
         android:minSdkVersion="4"
         android:targetSdkVersion="19" />
-    
+
+    <!-- These are required for Google Analytics -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
@@ -41,6 +42,5 @@
         <service android:name=".AppWidget$ToggleService" >
         </service>
     </application>
-    
 
 </manifest>
