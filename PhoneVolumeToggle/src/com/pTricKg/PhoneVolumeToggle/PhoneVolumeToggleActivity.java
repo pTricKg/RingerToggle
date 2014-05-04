@@ -3,14 +3,12 @@ package com.pTricKg.PhoneVolumeToggle;
 import android.app.Activity;
 import android.appwidget.AppWidgetManager;
 import android.content.ComponentName;
-import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.media.AudioManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
 public class PhoneVolumeToggleActivity extends Activity {
 
@@ -55,12 +53,12 @@ public class PhoneVolumeToggleActivity extends Activity {
 					mPhoneIsSilent = false;
 					mPhoneIsVibrate = false;
 
-					Context context = getApplicationContext();
-					CharSequence text = "Ringer On";
-					int duration = Toast.LENGTH_SHORT;
-
-					Toast toast = Toast.makeText(context, text, duration);
-					toast.show();
+//					Context context = getApplicationContext();
+//					CharSequence text = "Ringer On";
+//					int duration = Toast.LENGTH_SHORT;
+//
+//					Toast toast = Toast.makeText(context, text, duration);
+//					toast.show();
 
 				} else if (mPhoneIsVibrate) {
 					// change to silent
@@ -69,12 +67,12 @@ public class PhoneVolumeToggleActivity extends Activity {
 					mPhoneIsSilent = true;
 					mPhoneIsVibrate = false;
 
-					Context context = getApplicationContext();
-					CharSequence text = "Ringer Silenced";
-					int duration = Toast.LENGTH_SHORT;
-
-					Toast toast = Toast.makeText(context, text, duration);
-					toast.show();
+//					Context context = getApplicationContext();
+//					CharSequence text = "Ringer Silenced";
+//					int duration = Toast.LENGTH_SHORT;
+//
+//					Toast toast = Toast.makeText(context, text, duration);
+//					toast.show();
 
 				} else {
 					mAudioManager
@@ -82,12 +80,12 @@ public class PhoneVolumeToggleActivity extends Activity {
 					mPhoneIsVibrate = true;
 					mPhoneIsSilent = false;
 
-					Context context = getApplicationContext();
-					CharSequence text = "Ringer vibrate";
-					int duration = Toast.LENGTH_SHORT;
-
-					Toast toast = Toast.makeText(context, text, duration);
-					toast.show();
+//					Context context = getApplicationContext();
+//					CharSequence text = "Ringer vibrate";
+//					int duration = Toast.LENGTH_SHORT;
+//
+//					Toast toast = Toast.makeText(context, text, duration);
+//					toast.show();
 
 				}
 				// calling to toggle UI
