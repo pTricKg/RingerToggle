@@ -18,12 +18,13 @@ public class AppWidget extends AppWidgetProvider {
 
 	@Override
 	public void onReceive(Context context, Intent intent) {
-		Log.e(TAG,"onReceive");
+		Log.e(TAG, "onReceive");
 		if (intent.getAction() == null) {
 			context.startService(new Intent(context, ToggleService.class));
-			
-		}else {
+
+		} else {
 			super.onReceive(context, intent);
+
 		}
 	}
 
@@ -65,6 +66,20 @@ public class AppWidget extends AppWidgetProvider {
 			AudioManager audioManager = (AudioManager) context
 					.getSystemService(Activity.AUDIO_SERVICE);
 
+			// trying to fix updateWidget() calls
+//			int ringerMode = audioManager.getRingerMode();
+//			if (ringerMode == AudioManager.RINGER_MODE_SILENT) {
+//
+//			} else if (ringerMode == AudioManager.RINGER_MODE_NORMAL) {
+//
+//			} else if (ringerMode == AudioManager.RINGER_MODE_VIBRATE) {
+//
+//			} else {
+//
+//			}
+			// NOT WORKING HERE EITHER
+			// updateWidget();
+
 			if (audioManager.getRingerMode() == AudioManager.RINGER_MODE_SILENT) {
 				updateViews.setImageViewResource(R.id.phoneState,
 						R.drawable.phone_on);
@@ -81,7 +96,17 @@ public class AppWidget extends AppWidgetProvider {
 
 				audioManager.setRingerMode(AudioManager.RINGER_MODE_SILENT);
 			}
-
+			// Intent intent = new Intent(this,AppWidget.class);
+			// intent.setAction("android.appwidget.action.APPWIDGET_UPDATE");
+			// // Use an array and EXTRA_APPWIDGET_IDS instead of
+			// // AppWidgetManager.EXTRA_APPWIDGET_ID,
+			// // since it seems the onUpdate() is only fired on that:
+			// int ids[] = AppWidgetManager.getInstance(getApplication())
+			// .getAppWidgetIds(
+			// new ComponentName(getApplication(),
+			// AppWidget.class));
+			// intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS, ids);
+			// sendBroadcast(intent);
 			Intent i = new Intent(this, AppWidget.class);
 
 			// intent to get other activity processes and update widget view
@@ -91,4 +116,5 @@ public class AppWidget extends AppWidgetProvider {
 
 		}
 	}
+
 }

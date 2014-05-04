@@ -16,6 +16,8 @@ public class PhoneVolumeToggleActivity extends Activity {
 
 	private static final String TAG = "PhoneVolumeToggleActivity";
 
+	//private static final int widgetId = 0;
+
 	private AudioManager mAudioManager;
 	private boolean mPhoneIsSilent;
 	private boolean mPhoneIsVibrate;
@@ -31,11 +33,14 @@ public class PhoneVolumeToggleActivity extends Activity {
 
 		// initializing Ringer State check
 		checkIfPhoneIsSilent();
+		
+		//updateWidget();
 
 		// initialize button click listener.
 		// place here to allow ringer state check first, I think!
 		setButtonClickListener();
 		
+		//NOT HERE PLEASE
 	}
 
 	private void setButtonClickListener() {
@@ -44,7 +49,9 @@ public class PhoneVolumeToggleActivity extends Activity {
 		 * with using ImageButton instead of Button.. now trying fix with
 		 * removal of auto-updater..
 		 */
-
+		
+		//NOT HERE EITHER
+		
 		final ImageButton toggleButton = (ImageButton) findViewById(R.id.toggleButton);
 		toggleButton.setOnClickListener(new View.OnClickListener() {
 
@@ -53,6 +60,7 @@ public class PhoneVolumeToggleActivity extends Activity {
 				// this checks to see what to set
 				// if silent, turns on, if on , turn off. otherwise, switches to
 				// vibrate mode
+
 				if (mPhoneIsSilent) {
 					// change to Normal
 					mAudioManager
@@ -97,10 +105,13 @@ public class PhoneVolumeToggleActivity extends Activity {
 				}
 				// calling to toggle UI
 				toggleUi();
+
+				//DO NOT UPDATE WIDGET FROM HERE
+
 			}
 
 		});
-
+		//NOR HERE
 	}
 
 	private void checkIfPhoneIsSilent() {
@@ -121,7 +132,9 @@ public class PhoneVolumeToggleActivity extends Activity {
 			mPhoneIsSilent = false;
 			mPhoneIsVibrate = false;
 		}
-	}
+		//NOT WORKING HERE EITHER
+		//updateWidget();
+		}
 
 	// makes layout switch
 	private void toggleUi() {
@@ -143,10 +156,22 @@ public class PhoneVolumeToggleActivity extends Activity {
 
 		}
 		imageButton.setImageDrawable(newPhoneImage);
+		
+		//NOT HERE EITHER
+//		Intent intent = new Intent(this,AppWidget.class);
+//		intent.setAction("android.appwidget.action.APPWIDGET_UPDATE");
+//		// Use an array and EXTRA_APPWIDGET_IDS instead of
+//		// AppWidgetManager.EXTRA_APPWIDGET_ID,
+//		// since it seems the onUpdate() is only fired on that:
+//		int ids[] = AppWidgetManager.getInstance(getApplication())
+//				.getAppWidgetIds(
+//						new ComponentName(getApplication(),
+//								AppWidget.class));
+//		intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS, ids);
+//		sendBroadcast(intent);
+//
+		}
 
-	}
-	
-	
 	// makes sure to check ringer state when user resumes activity
 	@Override
 	protected void onResume() {
@@ -154,17 +179,43 @@ public class PhoneVolumeToggleActivity extends Activity {
 		super.onResume();
 		checkIfPhoneIsSilent();
 		toggleUi();
-	}
-	
-	// trying to fix widget not updating when app state is changed
-	private void updateWidget() {
-		AppWidgetManager appWidgetManager = AppWidgetManager
-				.getInstance(getApplicationContext());
-		int[] appWidgetIds = appWidgetManager
-				.getAppWidgetIds(new ComponentName(this, AppWidget.class));
-		if (appWidgetIds.length > 0) {
-			new AppWidget().onUpdate(this, appWidgetManager, appWidgetIds);
+		//NOT WORKING HERE
+		//updateWidget();
 		}
+	protected void onPause() {
+		Log.e(TAG, "onPause");
+		super.onPause();
+		updateWidget();
+		updateWidget();
+	}
+	protected void onStop() {
+		Log.e(TAG, "onStop");
+		super.onStop();
+		updateWidget();
 	}
 	
+	 // trying to fix widget not updating when app state is changed
+	 private void updateWidget() {
+	 AppWidgetManager appWidgetManager = AppWidgetManager
+	 .getInstance(getApplicationContext());
+	 int[] appWidgetIds = appWidgetManager
+	 .getAppWidgetIds(new ComponentName(this, AppWidget.class));
+	 if (appWidgetIds.length > 0) {
+	 new AppWidget().onUpdate(this, appWidgetManager, appWidgetIds);
+	 }
+}
+	
+//	Intent intent = new Intent(this,AppWidget.class);
+//	intent.setAction("android.appwidget.action.APPWIDGET_UPDATE");
+//	// Use an array and EXTRA_APPWIDGET_IDS instead of
+//	// AppWidgetManager.EXTRA_APPWIDGET_ID,
+//	// since it seems the onUpdate() is only fired on that:
+//	int ids[] = AppWidgetManager.getInstance(getApplication())
+//			.getAppWidgetIds(
+//					new ComponentName(getApplication(),
+//							AppWidget.class));
+//	intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS, ids);
+//	sendBroadcast(intent);
+
+
 }
