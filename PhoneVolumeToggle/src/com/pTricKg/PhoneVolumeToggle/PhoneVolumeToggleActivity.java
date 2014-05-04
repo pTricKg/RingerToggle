@@ -1,5 +1,7 @@
 package com.pTricKg.PhoneVolumeToggle;
 
+import java.util.HashMap;
+
 import android.app.Activity;
 import android.appwidget.AppWidgetManager;
 import android.content.ComponentName;
@@ -53,12 +55,12 @@ public class PhoneVolumeToggleActivity extends Activity {
 					mPhoneIsSilent = false;
 					mPhoneIsVibrate = false;
 
-//					Context context = getApplicationContext();
-//					CharSequence text = "Ringer On";
-//					int duration = Toast.LENGTH_SHORT;
-//
-//					Toast toast = Toast.makeText(context, text, duration);
-//					toast.show();
+					// Context context = getApplicationContext();
+					// CharSequence text = "Ringer On";
+					// int duration = Toast.LENGTH_SHORT;
+					//
+					// Toast toast = Toast.makeText(context, text, duration);
+					// toast.show();
 
 				} else if (mPhoneIsVibrate) {
 					// change to silent
@@ -67,12 +69,12 @@ public class PhoneVolumeToggleActivity extends Activity {
 					mPhoneIsSilent = true;
 					mPhoneIsVibrate = false;
 
-//					Context context = getApplicationContext();
-//					CharSequence text = "Ringer Silenced";
-//					int duration = Toast.LENGTH_SHORT;
-//
-//					Toast toast = Toast.makeText(context, text, duration);
-//					toast.show();
+					// Context context = getApplicationContext();
+					// CharSequence text = "Ringer Silenced";
+					// int duration = Toast.LENGTH_SHORT;
+					//
+					// Toast toast = Toast.makeText(context, text, duration);
+					// toast.show();
 
 				} else {
 					mAudioManager
@@ -80,12 +82,12 @@ public class PhoneVolumeToggleActivity extends Activity {
 					mPhoneIsVibrate = true;
 					mPhoneIsSilent = false;
 
-//					Context context = getApplicationContext();
-//					CharSequence text = "Ringer vibrate";
-//					int duration = Toast.LENGTH_SHORT;
-//
-//					Toast toast = Toast.makeText(context, text, duration);
-//					toast.show();
+					// Context context = getApplicationContext();
+					// CharSequence text = "Ringer vibrate";
+					// int duration = Toast.LENGTH_SHORT;
+					//
+					// Toast toast = Toast.makeText(context, text, duration);
+					// toast.show();
 
 				}
 				// calling to toggle UI
@@ -175,4 +177,32 @@ public class PhoneVolumeToggleActivity extends Activity {
 		}
 	}
 
+	/**
+	 * Enum used to identify the tracker that needs to be used for tracking.
+	 * 
+	 * A single tracker is usually enough for most purposes. In case you do need
+	 * multiple trackers, storing them all in Application object helps ensure
+	 * that they are created only once per application instance.
+	 */
+	public enum TrackerName {
+		APP_TRACKER, // Tracker used only in this app.
+		GLOBAL_TRACKER, // Tracker used by all the apps from a company. eg:
+						// roll-up tracking.
+	}
+
+	HashMap<TrackerName, Tracker> mTrackers = new HashMap<TrackerName, Tracker>();
+
+	synchronized Tracker getTracker(TrackerName trackerId) {
+		if (!mTrackers.containsKey(trackerId)) {
+
+			GoogleAnalytics analytics = GoogleAnalytics.getInstance(this);
+			Tracker t = (trackerId == TrackerName.APP_TRACKER) ? analytics
+					.newTracker(PROPERTY_ID)
+					: (trackerId == TrackerName.GLOBAL_TRACKER) ? analytics
+							.newTracker(R.xml.global_tracker);
+			mTrackers.put(trackerId, t);
+
+		}
+		return mTrackers.get(trackerId);
+	}
 }
