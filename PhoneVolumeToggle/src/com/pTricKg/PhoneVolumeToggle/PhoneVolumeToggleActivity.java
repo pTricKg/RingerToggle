@@ -1,7 +1,5 @@
 package com.pTricKg.PhoneVolumeToggle;
 
-import java.util.HashMap;
-
 import android.app.Activity;
 import android.appwidget.AppWidgetManager;
 import android.content.ComponentName;
@@ -102,19 +100,19 @@ public class PhoneVolumeToggleActivity extends Activity {
 		Log.e(TAG, "checkIfPhoneIsSilent");
 
 		int ringerMode = mAudioManager.getRingerMode();
-		if (ringerMode == AudioManager.RINGER_MODE_SILENT) {
-			mPhoneIsSilent = true;
-			mPhoneIsVibrate = false;
-		} else if (ringerMode == AudioManager.RINGER_MODE_NORMAL) {
+		if (ringerMode == AudioManager.RINGER_MODE_NORMAL) {
 			mPhoneIsSilent = false;
+			mPhoneIsVibrate = false;
+		} else if (ringerMode == AudioManager.RINGER_MODE_SILENT) {
+			mPhoneIsSilent = true;
 			mPhoneIsVibrate = false;
 		} else if (ringerMode == AudioManager.RINGER_MODE_VIBRATE) {
 			mPhoneIsSilent = false;
 			mPhoneIsVibrate = true;
-		} else {
-			mPhoneIsSilent = false;
-			mPhoneIsVibrate = false;
-		}
+		} //else {
+//			mPhoneIsSilent = false;
+//			mPhoneIsVibrate = true;
+//		}
 	}
 
 	// makes layout switch
@@ -184,25 +182,25 @@ public class PhoneVolumeToggleActivity extends Activity {
 	 * multiple trackers, storing them all in Application object helps ensure
 	 * that they are created only once per application instance.
 	 */
-	public enum TrackerName {
-		APP_TRACKER, // Tracker used only in this app.
-		GLOBAL_TRACKER, // Tracker used by all the apps from a company. eg:
-						// roll-up tracking.
-	}
-
-	HashMap<TrackerName, Tracker> mTrackers = new HashMap<TrackerName, Tracker>();
-
-	synchronized Tracker getTracker(TrackerName trackerId) {
-		if (!mTrackers.containsKey(trackerId)) {
-
-			GoogleAnalytics analytics = GoogleAnalytics.getInstance(this);
-			Tracker t = (trackerId == TrackerName.APP_TRACKER) ? analytics
-					.newTracker(PROPERTY_ID)
-					: (trackerId == TrackerName.GLOBAL_TRACKER) ? analytics
-							.newTracker(R.xml.global_tracker);
-			mTrackers.put(trackerId, t);
-
-		}
-		return mTrackers.get(trackerId);
-	}
+//	public enum TrackerName {
+//		APP_TRACKER, // Tracker used only in this app.
+//		GLOBAL_TRACKER, // Tracker used by all the apps from a company. eg:
+//						// roll-up tracking.
+//	}
+//
+//	HashMap<TrackerName, Tracker> mTrackers = new HashMap<TrackerName, Tracker>();
+//
+//	synchronized Tracker getTracker(TrackerName trackerId) {
+//		if (!mTrackers.containsKey(trackerId)) {
+//
+//			GoogleAnalytics analytics = GoogleAnalytics.getInstance(this);
+//			Tracker t = (trackerId == TrackerName.APP_TRACKER) ? analytics
+//					.newTracker(PROPERTY_ID)
+//					: (trackerId == TrackerName.GLOBAL_TRACKER) ? analytics
+//							.newTracker(R.xml.global_tracker);
+//			mTrackers.put(trackerId, t);
+//
+//		}
+//		return mTrackers.get(trackerId);
+//	}
 }
