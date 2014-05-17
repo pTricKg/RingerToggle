@@ -1,2 +1,5 @@
 App/Widget to silence ringer on Android.
 Now includes vibrate functionality and scalable widget.
+
+--TODO--
+....Add ability to schedule time to reset ringer to desired state.
