@@ -18,7 +18,9 @@ public class AppWidget extends AppWidgetProvider {
 
 	@Override
 	public void onReceive(Context context, Intent intent) {
+		
 		Log.e(TAG, "onReceive");
+		
 		if (intent.getAction() == null) {
 			context.startService(new Intent(context, ToggleService.class));
 
