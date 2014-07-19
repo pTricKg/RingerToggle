@@ -12,6 +12,8 @@ import android.media.AudioManager;
 import android.util.Log;
 import android.widget.RemoteViews;
 
+/* why i cannot figure this out is beyond me! */
+
 public class AppWidget extends AppWidgetProvider {
 
 	private static final String TAG = "AppWidget";
