@@ -10,6 +10,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 
+/* why i cannot figure this out is beyond me! */
+
 public class PhoneVolumeToggleActivity extends Activity {
 
 	private static final String TAG = "PhoneVolumeToggleActivity";
