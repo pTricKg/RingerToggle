@@ -8,7 +8,7 @@
     <ImageButton
         android:id="@+id/toggleButton"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|center_horizontal"
         android:background="#000000"
         android:contentDescription="@string/app_name"
@@ -16,4 +16,14 @@
         android:minWidth="72dp"
         android:src="@drawable/phone_on" />
 
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:contentDescription="@string/app_name"
+        android:minHeight="72dp"
+        android:minWidth="72dp"
+        android:src="@drawable/phone_vibrate" />
+    
 </LinearLayout>

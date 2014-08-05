@@ -20,7 +20,8 @@ public final class R {
         public static final int phone_vibrate=0x7f020006;
     }
     public static final class id {
-        public static final int phoneState=0x7f060001;
+        public static final int imageButton1=0x7f060001;
+        public static final int phoneState=0x7f060002;
         public static final int toggleButton=0x7f060000;
     }
     public static final class layout {
