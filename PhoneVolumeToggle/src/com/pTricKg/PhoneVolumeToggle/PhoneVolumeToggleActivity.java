@@ -15,7 +15,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-/* why i cannot figure this out is beyond me! */
+/* Still WIP */
 
 public class PhoneVolumeToggleActivity extends Activity {
 
@@ -24,7 +24,7 @@ public class PhoneVolumeToggleActivity extends Activity {
 	private AudioManager mAudioManager;
 	private boolean mPhoneIsSilent;
 	private boolean mPhoneIsVibrate;
-
+ 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		Log.e(TAG, "onCreate");
