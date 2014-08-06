@@ -1,14 +1,19 @@
 package com.pTricKg.PhoneVolumeToggle;
 
 import android.app.Activity;
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
 import android.content.ComponentName;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.media.AudioManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 /* why i cannot figure this out is beyond me! */
 
@@ -35,6 +40,20 @@ public class PhoneVolumeToggleActivity extends Activity {
 		// initialize button click listener.
 		// place here to allow ringer state check first, I think!
 		setButtonClickListener();
+	}
+	
+	// new method test for timer functionality
+	public void startTimer(View view) {
+		EditText text = (EditText) findViewById(R.id.editText1);
+		int i = Integer.parseInt(text.getText().toString());
+		Intent intent = new Intent(this, MyBroadcastReceiver.class);
+		PendingIntent pendingIntent = PendingIntent.getBroadcast(this.getApplicationContext(), 234324243, intent, 0);
+	    AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
+	    alarmManager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis()
+	        + (i * 1000), pendingIntent);
+	    Toast.makeText(this, "You've set alarm for " + i + " seconds",
+	        Toast.LENGTH_LONG).show();
+		
 	}
 
 	private void setButtonClickListener() {
