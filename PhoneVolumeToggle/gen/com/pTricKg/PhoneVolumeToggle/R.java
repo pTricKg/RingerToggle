@@ -20,8 +20,9 @@ public final class R {
         public static final int phone_vibrate=0x7f020006;
     }
     public static final class id {
-        public static final int imageButton1=0x7f060001;
-        public static final int phoneState=0x7f060002;
+        public static final int editText1=0x7f060001;
+        public static final int ok=0x7f060002;
+        public static final int phoneState=0x7f060003;
         public static final int toggleButton=0x7f060000;
     }
     public static final class layout {
@@ -30,8 +31,10 @@ public final class R {
     }
     public static final class string {
         public static final int app_name=0x7f050001;
+        public static final int counter=0x7f050003;
         public static final int hello=0x7f050000;
-        public static final int toggle_silent_mode=0x7f050002;
+        public static final int nTime=0x7f050002;
+        public static final int toggle_silent_mode=0x7f050004;
     }
     public static final class xml {
         public static final int global_tracker=0x7f040000;
