@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="toggle_silent_mode">attivare o disattivare la suoneria</string>
-    
-    <string name="hello">suoneria attivare o disattivare</string>
-    <string name="app_name">suoneria attivare o disattivare</string>
-</resources>

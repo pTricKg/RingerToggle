@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="toggle_silent_mode">Conmutar el timbre</string>
-    
-    <string name="hello">Timbre Conmutar</string>
-    <string name="app_name">Timbre Conmutar</string>
-</resources>

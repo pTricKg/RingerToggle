@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="toggle_silent_mode">Ringer Wechseln</string>
-    
-    <string name="hello">Wechseln Ringer</string>
-    <string name="app_name">Wechseln Ringer</string>
-</resources>

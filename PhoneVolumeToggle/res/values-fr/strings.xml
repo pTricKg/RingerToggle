@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="toggle_silent_mode">Basculer de la Sonnerie</string>
-    
-    <string name="hello">Sonnerie Bascule</string>
-    <string name="app_name">Sonnerie Bascule</string>
-</resources>
