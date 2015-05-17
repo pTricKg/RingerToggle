@@ -1,19 +1,15 @@
 package com.pTricKg.PhoneVolumeToggle;
 
 import android.app.Activity;
-import android.app.AlarmManager;
-import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
 import android.content.ComponentName;
-import android.content.Intent;
+import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.media.AudioManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
 /* Still WIP */
 
@@ -24,7 +20,7 @@ public class PhoneVolumeToggleActivity extends Activity {
 	private AudioManager mAudioManager;
 	private boolean mPhoneIsSilent;
 	private boolean mPhoneIsVibrate;
- 
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		Log.e(TAG, "onCreate");
@@ -40,20 +36,6 @@ public class PhoneVolumeToggleActivity extends Activity {
 		// initialize button click listener.
 		// place here to allow ringer state check first, I think!
 		setButtonClickListener();
-	}
-	
-	// new method test for timer functionality
-	public void startTimer(View view) {
-		EditText text = (EditText) findViewById(R.id.editText1);
-		int i = Integer.parseInt(text.getText().toString());
-		Intent intent = new Intent(this, MyBroadcastReceiver.class);
-		PendingIntent pendingIntent = PendingIntent.getBroadcast(this.getApplicationContext(), 234324243, intent, 0);
-	    AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
-	    alarmManager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis()
-	        + (i * 1000), pendingIntent);
-	    Toast.makeText(this, "You've set alarm for " + i + " seconds",
-	        Toast.LENGTH_LONG).show();
-		
 	}
 
 	private void setButtonClickListener() {
@@ -83,8 +65,8 @@ public class PhoneVolumeToggleActivity extends Activity {
 
 				} else if (mPhoneIsVibrate) {
 					// change to silent
-					mAudioManager
-							.setRingerMode(AudioManager.RINGER_MODE_SILENT);
+					silencePhone();
+					// mAudioManager.setRingerMode(AudioManager.RINGER_MODE_SILENT);
 					mPhoneIsSilent = true;
 					mPhoneIsVibrate = false;
 
@@ -130,10 +112,7 @@ public class PhoneVolumeToggleActivity extends Activity {
 		} else if (ringerMode == AudioManager.RINGER_MODE_VIBRATE) {
 			mPhoneIsSilent = false;
 			mPhoneIsVibrate = true;
-		} //else {
-//			mPhoneIsSilent = false;
-//			mPhoneIsVibrate = true;
-//		}
+		}
 	}
 
 	// makes layout switch
@@ -158,6 +137,31 @@ public class PhoneVolumeToggleActivity extends Activity {
 		imageButton.setImageDrawable(newPhoneImage);
 	}
 
+	// Added to deal with priority issues in 5.0
+	private void silencePhone() {
+		setPriorityAndSilence();
+		new Thread(new Runnable() {
+			@Override
+			public void run() {
+				try {
+					Thread.sleep(500);
+				} catch (InterruptedException e) {
+
+				}
+
+				setPriorityAndSilence();
+
+			}
+		}).run();
+	}
+
+	private void setPriorityAndSilence() {
+		AudioManager audioManager;
+		audioManager = (AudioManager) getBaseContext().getSystemService(
+				Context.AUDIO_SERVICE);
+		audioManager.setRingerMode(AudioManager.RINGER_MODE_SILENT);
+	}
+
 	// makes sure to check ringer state when user resumes activity
 	@Override
 	protected void onResume() {
@@ -165,6 +169,7 @@ public class PhoneVolumeToggleActivity extends Activity {
 		super.onResume();
 		checkIfPhoneIsSilent();
 		toggleUi();
+		// updateWidget();
 	}
 
 	protected void onPause() {
@@ -194,34 +199,7 @@ public class PhoneVolumeToggleActivity extends Activity {
 		if (appWidgetIds.length > 0) {
 			new AppWidget().onUpdate(this, appWidgetManager, appWidgetIds);
 		}
+
 	}
 
-	/**
-	 * Enum used to identify the tracker that needs to be used for tracking.
-	 * 
-	 * A single tracker is usually enough for most purposes. In case you do need
-	 * multiple trackers, storing them all in Application object helps ensure
-	 * that they are created only once per application instance.
-	 */
-//	public enum TrackerName {
-//		APP_TRACKER, // Tracker used only in this app.
-//		GLOBAL_TRACKER, // Tracker used by all the apps from a company. eg:
-//						// roll-up tracking.
-//	}
-//
-//	HashMap<TrackerName, Tracker> mTrackers = new HashMap<TrackerName, Tracker>();
-//
-//	synchronized Tracker getTracker(TrackerName trackerId) {
-//		if (!mTrackers.containsKey(trackerId)) {
-//
-//			GoogleAnalytics analytics = GoogleAnalytics.getInstance(this);
-//			Tracker t = (trackerId == TrackerName.APP_TRACKER) ? analytics
-//					.newTracker(PROPERTY_ID)
-//					: (trackerId == TrackerName.GLOBAL_TRACKER) ? analytics
-//							.newTracker(R.xml.global_tracker);
-//			mTrackers.put(trackerId, t);
-//
-//		}
-//		return mTrackers.get(trackerId);
-//	}
 }

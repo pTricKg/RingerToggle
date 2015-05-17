@@ -73,7 +73,7 @@ public class AppWidget extends AppWidgetProvider {
 			if (audioManager.getRingerMode() == AudioManager.RINGER_MODE_SILENT) {
 				updateViews.setImageViewResource(R.id.phoneState,
 						R.drawable.phone_on);
-
+				//silencePhone();
 				audioManager.setRingerMode(AudioManager.RINGER_MODE_NORMAL);
 			} else if (audioManager.getRingerMode() == AudioManager.RINGER_MODE_NORMAL) {
 				updateViews.setImageViewResource(R.id.phoneState,
@@ -83,8 +83,8 @@ public class AppWidget extends AppWidgetProvider {
 			} else {
 				updateViews.setImageViewResource(R.id.phoneState,
 						R.drawable.phone_silent);
-
-				audioManager.setRingerMode(AudioManager.RINGER_MODE_SILENT);
+				silencePhone();
+				//audioManager.setRingerMode(AudioManager.RINGER_MODE_SILENT);
 			}
 			
 			Intent i = new Intent(this, AppWidget.class);
@@ -94,6 +94,29 @@ public class AppWidget extends AppWidgetProvider {
 			return updateViews;
 
 		}
+		
+		private void silencePhone() {
+	        setPriorityAndSilence();
+	        new Thread( new Runnable() {
+	            @Override
+	            public void run() {
+	                try {
+	                    Thread.sleep(500);
+	                } catch( InterruptedException e ) {
+
+	                }
+
+	                setPriorityAndSilence();
+
+	            }
+	        } ).run();
+	    }
+
+	    private void setPriorityAndSilence() {
+	        AudioManager audioManager;
+	        audioManager = (AudioManager) getBaseContext().getSystemService( Context.AUDIO_SERVICE );
+	        audioManager.setRingerMode( AudioManager.RINGER_MODE_SILENT );
+	    }
 	}
 
 }

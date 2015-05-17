@@ -2,11 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.pTricKg.PhoneVolumeToggle"
     android:versionCode="10"
-    android:versionName="1.1.8" >
+    android:versionName="1.1.9" >
 
     <uses-sdk
         android:minSdkVersion="4"
-        android:targetSdkVersion="19" />
+        android:targetSdkVersion="22" />
 
     <!-- These are required for Google Analytics -->
     <uses-permission android:name="android.permission.INTERNET" />

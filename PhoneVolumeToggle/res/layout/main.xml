@@ -7,31 +7,13 @@
 
     <ImageButton
         android:id="@+id/toggleButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.56"
         android:background="#000000"
         android:contentDescription="@string/app_name"
         android:minHeight="72dp"
         android:minWidth="72dp"
         android:src="@drawable/phone_on" />
 
-    <EditText
-        android:id="@+id/editText1"
-        android:hint="@string/nTime"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10" >
-
-        <requestFocus />
-    </EditText>
-    
-    <Button
-        android:id="@+id/ok"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="startTimer"
-        android:text="@string/counter" >
-    </Button>
-    
 </LinearLayout>
