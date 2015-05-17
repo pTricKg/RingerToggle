@@ -177,6 +177,7 @@ public class PhoneVolumeToggleActivity extends Activity {
 		super.onPause();
 		// sloppy fix but works to update widget
 		// appropriately
+		toggleUi();
 		updateWidget();
 		updateWidget();
 	}
@@ -186,6 +187,7 @@ public class PhoneVolumeToggleActivity extends Activity {
 		// sloppy fix but works to update widget
 		// appropriately
 		super.onStop();
+		toggleUi();
 		updateWidget();
 	}
 
