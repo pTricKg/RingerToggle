@@ -31,7 +31,7 @@ import android.widget.ImageButton;
 /* Still WIP */
 
 public class PhoneVolumeToggleActivity extends Activity {
-
+	
 	private static final String TAG = "PhoneVolumeToggleActivity";
 
 	private AudioManager mAudioManager;
@@ -53,6 +53,7 @@ public class PhoneVolumeToggleActivity extends Activity {
 		// initialize button click listener.
 		// place here to allow ringer state check first, I think!
 		setButtonClickListener();
+		
 	}
 
 	private void setButtonClickListener() {
