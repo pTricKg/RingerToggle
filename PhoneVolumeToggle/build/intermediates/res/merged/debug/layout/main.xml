@@ -16,4 +16,12 @@
         android:minWidth="72dp"
         android:src="@drawable/phone_on" />
 
+    <Button
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:text="Go to Timer"
+        android:id="@+id/timerButton"
+        android:layout_gravity="center_horizontal"
+        android:onClick="openTimer"/>
+
 </LinearLayout>
