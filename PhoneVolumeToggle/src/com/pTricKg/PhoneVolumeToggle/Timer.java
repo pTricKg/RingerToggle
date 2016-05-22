@@ -37,7 +37,9 @@ public class Timer extends Activity{
         timerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                timePicker.clearFocus();
+                hour   = timePicker.getCurrentHour();
+                min = timePicker.getCurrentMinute();
                 makeToast();
 
                 }
