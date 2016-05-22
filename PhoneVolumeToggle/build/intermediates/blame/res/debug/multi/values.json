@@ -1,0 +1,45 @@
+[
+    {
+        "outputFile": "C:\\Users\\pTricKg\\git\\RingerToggle\\PhoneVolumeToggle\\build\\intermediates\\res\\merged\\debug\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 50,
+                    "endOffset": 101
+                },
+                "from": {
+                    "file": "C:\\Users\\pTricKg\\git\\RingerToggle\\PhoneVolumeToggle\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 108,
+                        "endColumn": 50,
+                        "endOffset": 154
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 106,
+                    "endColumn": 47,
+                    "endOffset": 149
+                },
+                "from": {
+                    "file": "C:\\Users\\pTricKg\\git\\RingerToggle\\PhoneVolumeToggle\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 59,
+                        "endColumn": 47,
+                        "endOffset": 102
+                    }
+                }
+            }
+        ]
+    }
+]

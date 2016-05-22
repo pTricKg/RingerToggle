@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+=======
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.0'
+    }
+}
+>>>>>>> a4b592df03c5ac0edbb0b18316c4c8c50dfebd0d
 apply plugin: 'com.android.application'
 
 dependencies {
@@ -6,7 +17,11 @@ dependencies {
 
 android {
     compileSdkVersion 19
+<<<<<<< HEAD
     buildToolsVersion "22.0.1"
+=======
+    buildToolsVersion "23.0.3"
+>>>>>>> a4b592df03c5ac0edbb0b18316c4c8c50dfebd0d
 
     sourceSets {
         main {

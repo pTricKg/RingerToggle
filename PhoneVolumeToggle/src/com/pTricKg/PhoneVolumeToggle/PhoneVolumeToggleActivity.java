@@ -21,11 +21,14 @@ import android.app.Activity;
 import android.appwidget.AppWidgetManager;
 import android.content.ComponentName;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.media.AudioManager;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 /* Still WIP */
@@ -53,8 +56,33 @@ public class PhoneVolumeToggleActivity extends Activity {
 		// initialize button click listener.
 		// place here to allow ringer state check first, I think!
 		setButtonClickListener();
+<<<<<<< HEAD
 		
+=======
+
+		//another button for timer
+		Button startButton = (Button) findViewById(R.id.timerButton);
+		startButton.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				openTimer();
+			}
+		});
+
+>>>>>>> a4b592df03c5ac0edbb0b18316c4c8c50dfebd0d
 	}
+	private void openTimer(){
+
+
+
+				Intent intent = new Intent(this, Timer.class);
+				startActivity(intent);
+
+	}
+
+
+
+
 
 	private void setButtonClickListener() {
 
