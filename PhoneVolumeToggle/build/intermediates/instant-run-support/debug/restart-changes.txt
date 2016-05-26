@@ -1,0 +1,2 @@
+CHANGED,C:\Users\pTricKg\git\RingerToggle\PhoneVolumeToggle\build\intermediates\transforms\instantRun\debug\folders\1\5\main\com\pTricKg\PhoneVolumeToggle\Timer.class
+CHANGED,C:\Users\pTricKg\git\RingerToggle\PhoneVolumeToggle\build\intermediates\transforms\instantRun\debug\folders\1\5\main\com\pTricKg\PhoneVolumeToggle\Timer$1.class

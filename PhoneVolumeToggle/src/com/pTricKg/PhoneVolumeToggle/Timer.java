@@ -1,18 +1,13 @@
 package com.pTricKg.PhoneVolumeToggle;
 
 import android.app.Activity;
-import android.app.TimePickerDialog;
-import android.widget.TimePicker;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
-import java.util.Calendar;
 
-import org.w3c.dom.Text;
+import java.util.Calendar;
 
 /**
  * Created by pTricKg on 5/21/2016.
