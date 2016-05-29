@@ -24,11 +24,11 @@
         "source": "/home/ptrickg/git/RingerToggle/PhoneVolumeToggle/res/drawable-ldpi/ic_launcher.png"
     },
     {
-        "merged": "/home/ptrickg/git/RingerToggle/PhoneVolumeToggle/build/intermediates/res/merged/debug/drawable-ldpi-v4/phone_state_normal.png",
-        "source": "/home/ptrickg/git/RingerToggle/PhoneVolumeToggle/res/drawable-ldpi/phone_state_normal.png"
-    },
-    {
         "merged": "/home/ptrickg/git/RingerToggle/PhoneVolumeToggle/build/intermediates/res/merged/debug/drawable-ldpi-v4/phone_vibrate.png",
         "source": "/home/ptrickg/git/RingerToggle/PhoneVolumeToggle/res/drawable-ldpi/phone_vibrate.png"
+    },
+    {
+        "merged": "/home/ptrickg/git/RingerToggle/PhoneVolumeToggle/build/intermediates/res/merged/debug/drawable-ldpi-v4/phone_state_normal.png",
+        "source": "/home/ptrickg/git/RingerToggle/PhoneVolumeToggle/res/drawable-ldpi/phone_state_normal.png"
     }
 ]

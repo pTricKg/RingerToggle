@@ -56,9 +56,6 @@ public class PhoneVolumeToggleActivity extends Activity {
 		// initialize button click listener.
 		// place here to allow ringer state check first, I think!
 		setButtonClickListener();
-<<<<<<< HEAD
-		
-=======
 
 		//another button for timer
 		Button startButton = (Button) findViewById(R.id.timerButton);
@@ -69,7 +66,7 @@ public class PhoneVolumeToggleActivity extends Activity {
 			}
 		});
 
->>>>>>> a4b592df03c5ac0edbb0b18316c4c8c50dfebd0d
+
 	}
 	private void openTimer(){
 
