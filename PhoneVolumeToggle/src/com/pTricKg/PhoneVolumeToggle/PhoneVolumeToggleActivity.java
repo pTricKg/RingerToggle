@@ -66,20 +66,13 @@ public class PhoneVolumeToggleActivity extends Activity {
 			}
 		});
 
-
 	}
 	private void openTimer(){
-
-
 
 				Intent intent = new Intent(this, Timer.class);
 				startActivity(intent);
 
 	}
-
-
-
-
 
 	private void setButtonClickListener() {
 
