@@ -25,6 +25,7 @@ public class Timer extends Activity{
     final Calendar c = Calendar.getInstance();
     int hour = c.get(Calendar.HOUR_OF_DAY);
     int min = c.get(Calendar.MINUTE);
+    String minuteString;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -40,12 +41,18 @@ public class Timer extends Activity{
             @Override
             public void onClick(View v) {
                 timePicker.clearFocus(); // remove system time for update
-                hour   = timePicker.getCurrentHour(); // set input time
+                hour = timePicker.getCurrentHour(); // set input time
                 min = timePicker.getCurrentMinute();
-                if(hour > 12){
+                if (hour > 12) {
                     hour -= 12;
                 }
 
+                if (min < 10) {
+                    minuteString = "0" + min;
+                }
+                else{
+                    minuteString = "" + min;
+                }
                 makeToast();
 
                 }
@@ -55,7 +62,7 @@ public class Timer extends Activity{
 
     private void makeToast() {
 
-        Toast.makeText(this, "Blah,Blah,Blah " + hour + ":" + min , Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Blah,Blah,Blah " + hour + ":" + minuteString , Toast.LENGTH_LONG).show();
     }
 
 
