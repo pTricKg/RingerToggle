@@ -1,13 +1,18 @@
 package com.pTricKg.PhoneVolumeToggle;
 
 import android.app.Activity;
+import android.app.TimePickerDialog;
+import android.widget.TimePicker;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
-
 import java.util.Calendar;
+
+import org.w3c.dom.Text;
 
 /**
  * Created by pTricKg on 5/21/2016.
@@ -32,8 +37,8 @@ public class Timer extends Activity{
         timerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                timePicker.clearFocus();  //clears current clock time
-                hour   = timePicker.getCurrentHour();  //sets new
+                timePicker.clearFocus(); // remove system time for update
+                hour   = timePicker.getCurrentHour(); // set input time
                 min = timePicker.getCurrentMinute();
                 makeToast();
 
