@@ -2,6 +2,7 @@ package com.pTricKg.PhoneVolumeToggle;
 
 import android.app.Activity;
 import android.app.TimePickerDialog;
+import android.text.format.DateUtils;
 import android.widget.TimePicker;
 import android.os.Bundle;
 import android.util.Log;
@@ -25,6 +26,7 @@ public class Timer extends Activity{
     final Calendar c = Calendar.getInstance();
     int hour = c.get(Calendar.HOUR_OF_DAY);
     int min = c.get(Calendar.MINUTE);
+    String ampm;
     String minuteString;
 
     @Override
@@ -43,9 +45,12 @@ public class Timer extends Activity{
                 timePicker.clearFocus(); // remove system time for update
                 hour = timePicker.getCurrentHour(); // set input time
                 min = timePicker.getCurrentMinute();
+                //String amPm = DateUtils.getAMPMString(c.get(Calendar.AM_PM));
                 if (hour > 12) {
                     hour -= 12;
+                    ampm = "PM";
                 }
+                else ampm = "AM";
 
                 if (min < 10) {
                     minuteString = "0" + min;
@@ -62,7 +67,7 @@ public class Timer extends Activity{
 
     private void makeToast() {
 
-        Toast.makeText(this, "Time Set: " + hour + ":" + minuteString , Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Time Set: " + hour + ":" + minuteString + ampm , Toast.LENGTH_LONG).show();
     }
 
 
