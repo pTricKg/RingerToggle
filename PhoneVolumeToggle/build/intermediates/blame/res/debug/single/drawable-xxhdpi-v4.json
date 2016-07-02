@@ -1,13 +1,5 @@
 [
     {
-        "merged": "C:\\home\\ptrickg\\git\\RingerToggle\\PhoneVolumeToggle\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\phone_on.png",
-        "source": "C:\\home\\ptrickg\\git\\RingerToggle\\PhoneVolumeToggle\\res\\drawable-xxhdpi\\phone_on.png"
-    },
-    {
-        "merged": "C:\\home\\ptrickg\\git\\RingerToggle\\PhoneVolumeToggle\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\phone_silent.png",
-        "source": "C:\\home\\ptrickg\\git\\RingerToggle\\PhoneVolumeToggle\\res\\drawable-xxhdpi\\phone_silent.png"
-    },
-    {
         "merged": "C:\\Users\\pTricKg\\git\\RingerToggle\\PhoneVolumeToggle\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\icon.png",
         "source": "C:\\Users\\pTricKg\\git\\RingerToggle\\PhoneVolumeToggle\\res\\drawable-xxhdpi\\icon.png"
     },
@@ -20,20 +12,8 @@
         "source": "C:\\Users\\pTricKg\\git\\RingerToggle\\PhoneVolumeToggle\\res\\drawable-xxhdpi\\phone_vibrate.png"
     },
     {
-        "merged": "C:\\home\\ptrickg\\git\\RingerToggle\\PhoneVolumeToggle\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_launcher.png",
-        "source": "C:\\home\\ptrickg\\git\\RingerToggle\\PhoneVolumeToggle\\res\\drawable-xxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\home\\ptrickg\\git\\RingerToggle\\PhoneVolumeToggle\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\phone_vibrate.png",
-        "source": "C:\\home\\ptrickg\\git\\RingerToggle\\PhoneVolumeToggle\\res\\drawable-xxhdpi\\phone_vibrate.png"
-    },
-    {
         "merged": "C:\\Users\\pTricKg\\git\\RingerToggle\\PhoneVolumeToggle\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\phone_silent.png",
         "source": "C:\\Users\\pTricKg\\git\\RingerToggle\\PhoneVolumeToggle\\res\\drawable-xxhdpi\\phone_silent.png"
-    },
-    {
-        "merged": "C:\\home\\ptrickg\\git\\RingerToggle\\PhoneVolumeToggle\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\icon.png",
-        "source": "C:\\home\\ptrickg\\git\\RingerToggle\\PhoneVolumeToggle\\res\\drawable-xxhdpi\\icon.png"
     },
     {
         "merged": "C:\\Users\\pTricKg\\git\\RingerToggle\\PhoneVolumeToggle\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\phone_on.png",

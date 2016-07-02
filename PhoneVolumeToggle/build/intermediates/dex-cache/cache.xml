@@ -1,26 +1,3 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" >
+<items version="2" />
 
-    <item
-        jar="C:\Users\pTricKg\git\RingerToggle\PhoneVolumeToggle\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="6b8f3113ed92df1ea988c050913a393fe9d3447d">
-        <dex dex="C:\Users\pTricKg\git\RingerToggle\PhoneVolumeToggle\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_98bf853ffee60ecba1597fcbb06b0d3f7af69ab0\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\pTricKg\git\RingerToggle\PhoneVolumeToggle\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="c088e40630b5f6a88a4cb06bd28dfd1bbf4995d6">
-        <dex dex="C:\Users\pTricKg\git\RingerToggle\PhoneVolumeToggle\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_2060893508ed2763ec878b25772acdfab288fda4\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\pTricKg\git\RingerToggle\PhoneVolumeToggle\libs\android-support-v4.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="5896b0a4e377ac4242eb2bc785220c1c4fc052f4">
-        <dex dex="C:\Users\pTricKg\git\RingerToggle\PhoneVolumeToggle\build\intermediates\transforms\dex\debug\folders\1000\2\android-support-v4_233bdb55daf130f1903314508d6deffe242f72c1\classes.dex" />
-    </item>
-
-</items>

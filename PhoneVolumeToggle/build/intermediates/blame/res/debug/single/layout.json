@@ -1,23 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\pTricKg\\git\\RingerToggle\\PhoneVolumeToggle\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
-        "source": "C:\\Users\\pTricKg\\git\\RingerToggle\\PhoneVolumeToggle\\res\\layout\\main.xml"
-    },
-    {
         "merged": "C:\\Users\\pTricKg\\git\\RingerToggle\\PhoneVolumeToggle\\build\\intermediates\\res\\merged\\debug\\layout\\widget.xml",
         "source": "C:\\Users\\pTricKg\\git\\RingerToggle\\PhoneVolumeToggle\\res\\layout\\widget.xml"
     },
     {
-        "merged": "C:\\home\\ptrickg\\git\\RingerToggle\\PhoneVolumeToggle\\build\\intermediates\\res\\merged\\debug\\layout\\widget.xml",
-        "source": "C:\\home\\ptrickg\\git\\RingerToggle\\PhoneVolumeToggle\\res\\layout\\widget.xml"
-    },
-    {
-        "merged": "C:\\home\\ptrickg\\git\\RingerToggle\\PhoneVolumeToggle\\build\\intermediates\\res\\merged\\debug\\layout\\timer.xml",
-        "source": "C:\\home\\ptrickg\\git\\RingerToggle\\PhoneVolumeToggle\\res\\layout\\timer.xml"
-    },
-    {
-        "merged": "C:\\home\\ptrickg\\git\\RingerToggle\\PhoneVolumeToggle\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
-        "source": "C:\\home\\ptrickg\\git\\RingerToggle\\PhoneVolumeToggle\\res\\layout\\main.xml"
+        "merged": "C:\\Users\\pTricKg\\git\\RingerToggle\\PhoneVolumeToggle\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "C:\\Users\\pTricKg\\git\\RingerToggle\\PhoneVolumeToggle\\res\\layout\\main.xml"
     },
     {
         "merged": "C:\\Users\\pTricKg\\git\\RingerToggle\\PhoneVolumeToggle\\build\\intermediates\\res\\merged\\debug\\layout\\timer.xml",

@@ -4,30 +4,71 @@
     api-level="24"
     density="560dpi"
     format="7"
-    timestamp="9184896124893"
-    token="-6634751395909433770" >
+    timestamp="67967205219715"
+    token="-6634751395909433770"
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="4892" />
+        duration="108" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="359" />
     <task
         name="instant-run-transform"
-        duration="176" />
+        duration="15" />
     <task
         name="verifier"
-        duration="48" />
+        duration="3" />
 
     <artifact
-        location="C:\Users\pTricKg\git\RingerToggle\PhoneVolumeToggle\build\outputs\apk\PhoneVolumeToggle-debug.apk"
-        type="MAIN" />
+        location="C:\Users\pTricKg\git\RingerToggle\PhoneVolumeToggle\build\intermediates\reload-dex\debug\classes.dex"
+        type="RELOAD_DEX" />
 
-    <build timestamp="9184896124893" >
+    <build timestamp="64457527420726" >
         <artifact
             location="C:\Users\pTricKg\git\RingerToggle\PhoneVolumeToggle\build\outputs\apk\PhoneVolumeToggle-debug.apk"
             type="MAIN" />
+    </build>
+    <build timestamp="64777382460563" >
+        <artifact
+            location="C:\Users\pTricKg\git\RingerToggle\PhoneVolumeToggle\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="66555435896251"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\pTricKg\git\RingerToggle\PhoneVolumeToggle\build\intermediates\builds\debug\66555435896251\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="67555488039372"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\pTricKg\git\RingerToggle\PhoneVolumeToggle\build\intermediates\builds\debug\67555488039372\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="67653104836231"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\pTricKg\git\RingerToggle\PhoneVolumeToggle\build\intermediates\builds\debug\67653104836231\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="67725298724698"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\pTricKg\git\RingerToggle\PhoneVolumeToggle\build\intermediates\builds\debug\67725298724698\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="67967205219715"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\pTricKg\git\RingerToggle\PhoneVolumeToggle\build\intermediates\reload-dex\debug\classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

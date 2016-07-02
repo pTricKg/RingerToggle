@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
+
+import java.text.DecimalFormat;
 import java.util.Calendar;
 
 import org.w3c.dom.Text;
@@ -40,6 +42,10 @@ public class Timer extends Activity{
                 timePicker.clearFocus(); // remove system time for update
                 hour   = timePicker.getCurrentHour(); // set input time
                 min = timePicker.getCurrentMinute();
+                if(hour > 12){
+                    hour -= 12;
+                }
+
                 makeToast();
 
                 }
@@ -49,7 +55,7 @@ public class Timer extends Activity{
 
     private void makeToast() {
 
-        Toast.makeText(this, "Blah,Blah,Blah " + hour + ":" + min, Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Blah,Blah,Blah " + hour + ":" + min , Toast.LENGTH_LONG).show();
     }
 
 
