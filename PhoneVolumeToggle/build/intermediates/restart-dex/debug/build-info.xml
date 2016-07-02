@@ -4,26 +4,26 @@
     api-level="24"
     density="560dpi"
     format="7"
-    timestamp="68393307555030"
+    timestamp="68556162530872"
     token="-6634751395909433770"
-    verifier="FIELD_ADDED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="94" />
+        duration="107" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="321" />
     <task
         name="instant-run-transform"
-        duration="15" />
+        duration="19" />
     <task
         name="verifier"
-        duration="2" />
+        duration="4" />
 
     <artifact
-        location="C:\Users\pTricKg\git\RingerToggle\PhoneVolumeToggle\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
-        type="DEX" />
+        location="C:\Users\pTricKg\git\RingerToggle\PhoneVolumeToggle\build\intermediates\reload-dex\debug\classes.dex"
+        type="RELOAD_DEX" />
 
     <build timestamp="64457527420726" >
         <artifact
@@ -36,6 +36,13 @@
         <artifact
             location="C:\Users\pTricKg\git\RingerToggle\PhoneVolumeToggle\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
             type="DEX" />
+    </build>
+    <build
+        timestamp="68556162530872"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\pTricKg\git\RingerToggle\PhoneVolumeToggle\build\intermediates\reload-dex\debug\classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

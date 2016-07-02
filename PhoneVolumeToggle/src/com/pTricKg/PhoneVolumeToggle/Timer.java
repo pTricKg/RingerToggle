@@ -62,7 +62,7 @@ public class Timer extends Activity{
 
     private void makeToast() {
 
-        Toast.makeText(this, "Blah,Blah,Blah " + hour + ":" + minuteString , Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Time Set: " + hour + ":" + minuteString , Toast.LENGTH_LONG).show();
     }
 
 

@@ -10,105 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15e03554-edd9-47c0-b8cc-4ca3d4140ccd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/builds/debug/64743889026336/classes.dex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/builds/debug/66555435896251/classes.dex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/builds/debug/67555488039372/classes.dex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/builds/debug/67653104836231/classes.dex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/builds/debug/67725298724698/classes.dex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/builds/debug/67967205219715/classes.dex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/pTricKg/PhoneVolumeToggle/AppWidget$ToggleService$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/pTricKg/PhoneVolumeToggle/AppWidget$ToggleService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/pTricKg/PhoneVolumeToggle/AppWidget.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/pTricKg/PhoneVolumeToggle/BuildConfig.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/pTricKg/PhoneVolumeToggle/GoogleAnalytics.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/pTricKg/PhoneVolumeToggle/MyBroadcastReceiver.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/pTricKg/PhoneVolumeToggle/PhoneVolumeToggleActivity$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/pTricKg/PhoneVolumeToggle/PhoneVolumeToggleActivity$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/pTricKg/PhoneVolumeToggle/PhoneVolumeToggleActivity$3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/pTricKg/PhoneVolumeToggle/PhoneVolumeToggleActivity.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/pTricKg/PhoneVolumeToggle/R$attr.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/pTricKg/PhoneVolumeToggle/R$drawable.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/pTricKg/PhoneVolumeToggle/R$id.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/pTricKg/PhoneVolumeToggle/R$layout.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/pTricKg/PhoneVolumeToggle/R$string.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/pTricKg/PhoneVolumeToggle/R$xml.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/pTricKg/PhoneVolumeToggle/R.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/pTricKg/PhoneVolumeToggle/Timer$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/pTricKg/PhoneVolumeToggle/Timer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/pTricKg/PhoneVolumeToggle/Tracker.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_98bf853ffee60ecba1597fcbb06b0d3f7af69ab0/classes.dex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/2/android-support-v4_233bdb55daf130f1903314508d6deffe242f72c1/classes.dex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/pTricKg/PhoneVolumeToggle/AppWidget$ToggleService$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/pTricKg/PhoneVolumeToggle/AppWidget$ToggleService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/pTricKg/PhoneVolumeToggle/AppWidget.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/pTricKg/PhoneVolumeToggle/BuildConfig.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/pTricKg/PhoneVolumeToggle/GoogleAnalytics.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/pTricKg/PhoneVolumeToggle/MyBroadcastReceiver.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/pTricKg/PhoneVolumeToggle/PhoneVolumeToggleActivity$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/pTricKg/PhoneVolumeToggle/PhoneVolumeToggleActivity$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/pTricKg/PhoneVolumeToggle/PhoneVolumeToggleActivity$3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/pTricKg/PhoneVolumeToggle/PhoneVolumeToggleActivity.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/pTricKg/PhoneVolumeToggle/R$attr.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/pTricKg/PhoneVolumeToggle/R$drawable.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/pTricKg/PhoneVolumeToggle/R$id.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/pTricKg/PhoneVolumeToggle/R$layout.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/pTricKg/PhoneVolumeToggle/R$string.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/pTricKg/PhoneVolumeToggle/R$xml.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/pTricKg/PhoneVolumeToggle/R.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/pTricKg/PhoneVolumeToggle/Timer$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/pTricKg/PhoneVolumeToggle/Timer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/pTricKg/PhoneVolumeToggle/Tracker.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/pTricKg/PhoneVolumeToggle/Timer$1$override.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/pTricKg/PhoneVolumeToggle/Timer$override.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/android/tools/fd/dummy/slice_0.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/android/tools/fd/dummy/slice_1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/pTricKg/PhoneVolumeToggle/AppWidget$ToggleService$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/pTricKg/PhoneVolumeToggle/AppWidget$ToggleService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/pTricKg/PhoneVolumeToggle/AppWidget.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/pTricKg/PhoneVolumeToggle/BuildConfig.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/pTricKg/PhoneVolumeToggle/GoogleAnalytics.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/pTricKg/PhoneVolumeToggle/MyBroadcastReceiver.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/pTricKg/PhoneVolumeToggle/PhoneVolumeToggleActivity$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/pTricKg/PhoneVolumeToggle/PhoneVolumeToggleActivity$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/pTricKg/PhoneVolumeToggle/PhoneVolumeToggleActivity$3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/pTricKg/PhoneVolumeToggle/PhoneVolumeToggleActivity.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/pTricKg/PhoneVolumeToggle/R$attr.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/pTricKg/PhoneVolumeToggle/R$drawable.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/pTricKg/PhoneVolumeToggle/R$id.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/pTricKg/PhoneVolumeToggle/R$layout.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/pTricKg/PhoneVolumeToggle/R$string.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/pTricKg/PhoneVolumeToggle/R$xml.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/pTricKg/PhoneVolumeToggle/R.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/pTricKg/PhoneVolumeToggle/Timer$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/pTricKg/PhoneVolumeToggle/Timer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/pTricKg/PhoneVolumeToggle/Tracker.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/android/tools/fd/dummy/slice_2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/android/tools/fd/dummy/slice_3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/android/tools/fd/dummy/slice_4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/android/tools/fd/dummy/slice_5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/android/tools/fd/dummy/slice_6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_7/com/android/tools/fd/dummy/slice_7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_8/com/android/tools/fd/dummy/slice_8.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/android/tools/fd/dummy/slice_9.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/bundles/debug/instant-run/AndroidManifest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/coldswap.marker" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/manifest.crc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package.marker" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/reload-changes.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/buildId.txt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/reload-changes.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
@@ -117,7 +19,14 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/pTricKg/PhoneVolumeToggle/Timer$1.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/pTricKg/PhoneVolumeToggle/Timer$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/pTricKg/PhoneVolumeToggle/Timer.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/pTricKg/PhoneVolumeToggle/Timer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/pTricKg/PhoneVolumeToggle/Timer$1.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/pTricKg/PhoneVolumeToggle/Timer$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/pTricKg/PhoneVolumeToggle/Timer.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/pTricKg/PhoneVolumeToggle/Timer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/pTricKg/PhoneVolumeToggle/Timer$1.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/pTricKg/PhoneVolumeToggle/Timer$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/pTricKg/PhoneVolumeToggle/Timer.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/pTricKg/PhoneVolumeToggle/Timer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/pTricKg/PhoneVolumeToggle/Timer$1$override.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/pTricKg/PhoneVolumeToggle/Timer$1$override.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/pTricKg/PhoneVolumeToggle/Timer$override.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/pTricKg/PhoneVolumeToggle/Timer$override.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/coldswap.marker" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/coldswap.marker" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/restart-dex/debug/build-info.xml" afterPath="$PROJECT_DIR$/build/intermediates/restart-dex/debug/build-info.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/pTricKg/PhoneVolumeToggle/Timer.java" afterPath="$PROJECT_DIR$/src/com/pTricKg/PhoneVolumeToggle/Timer.java" />
     </list>
@@ -171,8 +80,8 @@
       <file leaf-file-name="Timer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/pTricKg/PhoneVolumeToggle/Timer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.62222224">
-              <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+            <state vertical-scroll-proportion="1.4533334">
+              <caret line="64" column="39" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1140#1752#0" expanded="true" />
@@ -1433,7 +1342,13 @@
       <option name="project" value="LOCAL" />
       <updated>1467478826476</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fixed minutes display error&#10;">
+      <created>1467479282809</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1467479282809</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1475,7 +1390,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="bunch o stuff&#10;" />
     <MESSAGE value="clock to 12hr&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="clock to 12hr&#10;" />
+    <MESSAGE value="fixed minutes display error&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed minutes display error&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1648,8 +1564,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/pTricKg/PhoneVolumeToggle/Timer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62222224">
-          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        <state vertical-scroll-proportion="1.4533334">
+          <caret line="64" column="39" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1140#1752#0" expanded="true" />
