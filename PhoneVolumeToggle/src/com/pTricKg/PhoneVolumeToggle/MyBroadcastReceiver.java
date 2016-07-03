@@ -20,6 +20,9 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.media.Ringtone;
+import android.media.RingtoneManager;
+import android.net.Uri;
 import android.os.Vibrator;
 import android.widget.Toast;
 
@@ -31,6 +34,15 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
     // Vibrate the mobile phone
     Vibrator vibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
     vibrator.vibrate(2000);
+
+    // sound alarm
+    Uri alarm = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM);
+    if (alarm == null) {
+      alarm = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+    }
+
+    Ringtone ringtone = RingtoneManager.getRingtone(context, alarm);
+
     
     
     
