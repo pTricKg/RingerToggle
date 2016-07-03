@@ -12,6 +12,7 @@
 
     <uses-permission android:name="android.permission.VIBRATE" >
     </uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:allowBackup="true"
@@ -47,11 +48,13 @@
                 android:resource="@xml/widget_provider" />
         </receiver>
 
-        <service android:name="com.pTricKg.PhoneVolumeToggle.AppWidget$ToggleService" >
-        </service>
+        <service android:name="com.pTricKg.PhoneVolumeToggle.AppWidget$ToggleService" />
 
-        <receiver android:name="com.pTricKg.PhoneVolumeToggle.MyBroadcastReceiver" >
-        </receiver>
+        <receiver android:name="com.pTricKg.PhoneVolumeToggle.MyBroadcastReceiver" />
+
+        <service
+            android:name="com.pTricKg.PhoneVolumeToggle.Notification"
+            android:enabled="true" />
     </application>
 
 </manifest>

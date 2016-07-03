@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86_64"
+    abi="x86_64,x86"
     api-level="24"
     density="560dpi"
     format="7"
-    timestamp="89377333948927"
+    timestamp="94511484824564"
     token="-6634751395909433770" >
 
     <task
         name="javac"
-        duration="4993" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="513" />
+        duration="0" />
     <task
         name="verifier"
-        duration="43" />
+        duration="0" />
 
     <artifact
         location="C:\Users\pTricKg\git\RingerToggle\PhoneVolumeToggle\build\outputs\apk\PhoneVolumeToggle-debug.apk"
         type="MAIN" />
 
-    <build timestamp="89377333948927" >
+    <build timestamp="94511484824564" >
         <artifact
             location="C:\Users\pTricKg\git\RingerToggle\PhoneVolumeToggle\build\outputs\apk\PhoneVolumeToggle-debug.apk"
             type="MAIN" />

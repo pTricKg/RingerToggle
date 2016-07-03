@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
+import android.widget.ToggleButton;
 
 import java.text.DecimalFormat;
 import java.util.Calendar;
@@ -56,7 +57,7 @@ public class Timer extends Activity{
         timePicker = (TimePicker) findViewById(R.id.timePicker);
         timePicker.setIs24HourView(false);
         //another button for timer
-        final Button timerButton = (Button) findViewById(R.id.button);
+        ToggleButton timerButton = (ToggleButton) findViewById(R.id.button);
         timerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -78,14 +79,13 @@ public class Timer extends Activity{
                 }
                 makeToast();
 
+                // activate alarm
                 Intent myIntent = new Intent(Timer.this, MyBroadcastReceiver.class);
                 pendingIntent = PendingIntent.getBroadcast(Timer.this, 0, myIntent, 0);
                 alarmManager.set(AlarmManager.RTC, c.getTimeInMillis(), pendingIntent);
-
                 }
         });
     }
-
 
     private void makeToast() {
 
