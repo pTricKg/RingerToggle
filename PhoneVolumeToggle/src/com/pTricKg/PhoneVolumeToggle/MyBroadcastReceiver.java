@@ -24,9 +24,10 @@ import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Vibrator;
+import android.support.v4.content.WakefulBroadcastReceiver;
 import android.widget.Toast;
 
-public class MyBroadcastReceiver extends BroadcastReceiver {
+public class MyBroadcastReceiver extends WakefulBroadcastReceiver {
   @Override
   public void onReceive(Context context, Intent intent) {
     Toast.makeText(context, "Testing..1,2,3!.",
@@ -34,6 +35,9 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
     // Vibrate the mobile phone
     Vibrator vibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
     vibrator.vibrate(2000);
+
+      Timer alarmActivity = Timer.instance();
+      //alarmActivity.setAlarmText("Alarm! Wake up! Wake up!");
 
     // sound alarm
     Uri alarm = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM);

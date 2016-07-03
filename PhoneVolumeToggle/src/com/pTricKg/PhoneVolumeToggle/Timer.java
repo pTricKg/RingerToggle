@@ -1,7 +1,10 @@
 package com.pTricKg.PhoneVolumeToggle;
 
 import android.app.Activity;
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.app.TimePickerDialog;
+import android.content.Intent;
 import android.text.format.DateUtils;
 import android.widget.TimePicker;
 import android.os.Bundle;
@@ -29,10 +32,25 @@ public class Timer extends Activity{
     String ampm;
     String minuteString;
 
+    AlarmManager alarmManager;
+    private PendingIntent pendingIntent;
+    private static Timer alarmActivity;
+
+    public static Timer instance() {
+        return alarmActivity;
+    }
+
+    public void onStart() {
+        super.onStart();
+        alarmActivity = this;
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.timer);
+
+        alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
 
         //timepicker setup
         timePicker = (TimePicker) findViewById(R.id.timePicker);
@@ -59,6 +77,10 @@ public class Timer extends Activity{
                     minuteString = "" + min;
                 }
                 makeToast();
+
+                Intent myIntent = new Intent(Timer.this, MyBroadcastReceiver.class);
+                pendingIntent = PendingIntent.getBroadcast(Timer.this, 0, myIntent, 0);
+                alarmManager.set(AlarmManager.RTC, c.getTimeInMillis(), pendingIntent);
 
                 }
         });
