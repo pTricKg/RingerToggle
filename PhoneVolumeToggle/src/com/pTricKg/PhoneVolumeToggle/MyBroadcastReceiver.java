@@ -42,7 +42,7 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
     }
 
     Ringtone ringtone = RingtoneManager.getRingtone(context, alarm);
-
+    ringtone.play();
     
     
     
