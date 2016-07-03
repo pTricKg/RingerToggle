@@ -41,10 +41,7 @@ public class Timer extends Activity{
         return alarmActivity;
     }
 
-    public void onStart() {
-        super.onStart();
-        alarmActivity = this;
-    }
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -57,7 +54,7 @@ public class Timer extends Activity{
         timePicker = (TimePicker) findViewById(R.id.timePicker);
         timePicker.setIs24HourView(false);
         //another button for timer
-        ToggleButton timerButton = (ToggleButton) findViewById(R.id.button);
+        Button timerButton = (Button) findViewById(R.id.button);
         timerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -90,6 +87,16 @@ public class Timer extends Activity{
     private void makeToast() {
 
         Toast.makeText(this, "Time Set: " + hour + ":" + minuteString + ampm , Toast.LENGTH_LONG).show();
+    }
+
+    public void onStart() {
+        super.onStart();
+        alarmActivity = this;
+    }
+
+    public void onDestroy() {
+        super.onDestroy();
+        alarmActivity = this;
     }
 
 

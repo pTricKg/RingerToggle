@@ -14,7 +14,7 @@
         android:background="@android:color/black"
         android:accessibilityLiveRegion="none" />
 
-    <ToggleButton
+    <Button
         android:layout_width="255dp"
         android:layout_height="wrap_content"
         android:text="Set Timer"

@@ -10,17 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15e03554-edd9-47c0-b8cc-4ca3d4140ccd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/pTricKg/PhoneVolumeToggle/Notification.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/pTricKg/PhoneVolumeToggle/Notification.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/pTricKg/PhoneVolumeToggle/Notification.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/pTricKg/PhoneVolumeToggle/MyBroadcastReceiver$override.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/pTricKg/PhoneVolumeToggle/Notification$override.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/pTricKg/PhoneVolumeToggle/Timer$1$override.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/pTricKg/PhoneVolumeToggle/Timer$override.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/pTricKg/PhoneVolumeToggle/Notification.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/buildId.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/pTricKg/PhoneVolumeToggle/Notification.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/pTricKg/PhoneVolumeToggle/Timer$1$override.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
@@ -28,37 +18,30 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/pTricKg/PhoneVolumeToggle/MyBroadcastReceiver.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/pTricKg/PhoneVolumeToggle/MyBroadcastReceiver.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/pTricKg/PhoneVolumeToggle/Notification.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/pTricKg/PhoneVolumeToggle/Notification.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/pTricKg/PhoneVolumeToggle/Timer$1.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/pTricKg/PhoneVolumeToggle/Timer$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/pTricKg/PhoneVolumeToggle/Timer.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/pTricKg/PhoneVolumeToggle/Timer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" afterPath="$PROJECT_DIR$/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/pTricKg/PhoneVolumeToggle/MyBroadcastReceiver.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/pTricKg/PhoneVolumeToggle/MyBroadcastReceiver.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/pTricKg/PhoneVolumeToggle/Notification.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/pTricKg/PhoneVolumeToggle/Notification.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/pTricKg/PhoneVolumeToggle/Timer$1.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/pTricKg/PhoneVolumeToggle/Timer$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/pTricKg/PhoneVolumeToggle/Timer.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/pTricKg/PhoneVolumeToggle/Timer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/classes.zip" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/classes.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/resources.zip" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/resources.zip" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/build/intermediates/res/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/pTricKg/PhoneVolumeToggle/MyBroadcastReceiver.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/pTricKg/PhoneVolumeToggle/MyBroadcastReceiver.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/pTricKg/PhoneVolumeToggle/Notification.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/pTricKg/PhoneVolumeToggle/Notification.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/pTricKg/PhoneVolumeToggle/Timer$1.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/pTricKg/PhoneVolumeToggle/Timer$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/pTricKg/PhoneVolumeToggle/Timer.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/pTricKg/PhoneVolumeToggle/Timer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/pTricKg/PhoneVolumeToggle/MyBroadcastReceiver.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/pTricKg/PhoneVolumeToggle/MyBroadcastReceiver.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/pTricKg/PhoneVolumeToggle/Notification$override.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/pTricKg/PhoneVolumeToggle/Notification$override.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/pTricKg/PhoneVolumeToggle/Timer$override.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/pTricKg/PhoneVolumeToggle/Timer$override.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/pTricKg/PhoneVolumeToggle/Notification.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/pTricKg/PhoneVolumeToggle/Notification.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/pTricKg/PhoneVolumeToggle/Timer$1.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/pTricKg/PhoneVolumeToggle/Timer$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/pTricKg/PhoneVolumeToggle/Timer.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/pTricKg/PhoneVolumeToggle/Timer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/outputs/apk/PhoneVolumeToggle-debug-unaligned.apk" afterPath="$PROJECT_DIR$/build/outputs/apk/PhoneVolumeToggle-debug-unaligned.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/outputs/apk/PhoneVolumeToggle-debug.apk" afterPath="$PROJECT_DIR$/build/outputs/apk/PhoneVolumeToggle-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/bundles/debug/instant-run/AndroidManifest.xml" afterPath="$PROJECT_DIR$/build/intermediates/bundles/debug/instant-run/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/manifest.crc" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/manifest.crc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/reload-changes.txt" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/reload-changes.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/timer.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/timer.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/restart-dex/debug/build-info.xml" afterPath="$PROJECT_DIR$/build/intermediates/restart-dex/debug/build-info.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/build/outputs/logs/manifest-merger-debug-report.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/buildId.txt" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/buildId.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/timer.xml" afterPath="$PROJECT_DIR$/res/layout/timer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/pTricKg/PhoneVolumeToggle/MyBroadcastReceiver.java" afterPath="$PROJECT_DIR$/src/com/pTricKg/PhoneVolumeToggle/MyBroadcastReceiver.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/pTricKg/PhoneVolumeToggle/Timer.java" afterPath="$PROJECT_DIR$/src/com/pTricKg/PhoneVolumeToggle/Timer.java" />
     </list>
     <ignored path="PhoneVolumeToggle.iws" />
@@ -111,24 +94,14 @@
       <file leaf-file-name="Timer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/pTricKg/PhoneVolumeToggle/Timer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.82217574">
-              <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+            <state vertical-scroll-proportion="2.0759494">
+              <caret line="99" column="5" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
               <folding>
                 <element signature="e#1044#1045#0" expanded="true" />
                 <element signature="e#1080#1081#0" expanded="true" />
-                <element signature="e#1684#2738#0" expanded="true" />
-                <element signature="e#2737#2738#0" expanded="true" />
+                <element signature="e#1584#2638#0" expanded="true" />
+                <element signature="e#2637#2638#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -145,6 +118,16 @@
                 <element signature="e#529#530#0" expanded="true" />
                 <element signature="e#588#589#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -171,7 +154,7 @@
           </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-4.9454546">
-              <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -1054,13 +1037,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/pTricKg/PhoneVolumeToggle/PhoneVolumeToggleActivity.java" />
-        <option value="$PROJECT_DIR$/res/layout/timer.xml" />
-        <option value="$PROJECT_DIR$/src/com/pTricKg/PhoneVolumeToggle/Timer.java" />
         <option value="$PROJECT_DIR$/src/com/pTricKg/PhoneVolumeToggle/GetNotification.java" />
         <option value="$PROJECT_DIR$/src/com/pTricKg/PhoneVolumeToggle/AlarmService.java" />
         <option value="$PROJECT_DIR$/src/com/pTricKg/PhoneVolumeToggle/MyBroadcastReceiver.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/pTricKg/PhoneVolumeToggle/Notification.java" />
+        <option value="$PROJECT_DIR$/res/layout/timer.xml" />
+        <option value="$PROJECT_DIR$/src/com/pTricKg/PhoneVolumeToggle/Timer.java" />
       </list>
     </option>
   </component>
@@ -1543,12 +1526,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467579259490</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added notification service">
+      <created>1467584309501</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1467584309501</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="951" y="0" width="974" height="1167" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32825205" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1556,9 +1545,9 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" show_stripe_button="true" weight="0.23780487" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="29" y="367" width="914" height="668" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.79776424" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="949" y="160" width="978" height="824" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1580,6 +1569,14 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -1592,7 +1589,8 @@
     <MESSAGE value="setting up alarm receiver" />
     <MESSAGE value="forgot to play ringtone" />
     <MESSAGE value="alarm works but doesn't stop" />
-    <option name="LAST_COMMIT_MESSAGE" value="alarm works but doesn't stop" />
+    <MESSAGE value="added notification service" />
+    <option name="LAST_COMMIT_MESSAGE" value="added notification service" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1622,8 +1620,8 @@
           <folding>
             <element signature="e#1044#1045#0" expanded="true" />
             <element signature="e#1080#1081#0" expanded="true" />
-            <element signature="e#1684#2738#0" expanded="true" />
-            <element signature="e#2737#2738#0" expanded="true" />
+            <element signature="e#1584#2638#0" expanded="true" />
+            <element signature="e#2637#2638#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1675,8 +1673,8 @@
           <folding>
             <element signature="e#1044#1045#0" expanded="true" />
             <element signature="e#1080#1081#0" expanded="true" />
-            <element signature="e#1684#2738#0" expanded="true" />
-            <element signature="e#2737#2738#0" expanded="true" />
+            <element signature="e#1584#2638#0" expanded="true" />
+            <element signature="e#2637#2638#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1720,8 +1718,8 @@
           <folding>
             <element signature="e#1044#1045#0" expanded="true" />
             <element signature="e#1080#1081#0" expanded="true" />
-            <element signature="e#1684#2738#0" expanded="true" />
-            <element signature="e#2737#2738#0" expanded="true" />
+            <element signature="e#1584#2638#0" expanded="true" />
+            <element signature="e#2637#2638#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1757,8 +1755,8 @@
           <folding>
             <element signature="e#1044#1045#0" expanded="true" />
             <element signature="e#1080#1081#0" expanded="true" />
-            <element signature="e#1684#2738#0" expanded="true" />
-            <element signature="e#2737#2738#0" expanded="true" />
+            <element signature="e#1584#2638#0" expanded="true" />
+            <element signature="e#2637#2638#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1811,29 +1809,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/timer.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.9454546">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/pTricKg/PhoneVolumeToggle/PhoneVolumeToggleActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/pTricKg/PhoneVolumeToggle/MyBroadcastReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="23" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1865,6 +1844,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pTricKg/PhoneVolumeToggle/MyBroadcastReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="23" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1873,15 +1860,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/timer.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.9454546">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/pTricKg/PhoneVolumeToggle/Timer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82217574">
-          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+        <state vertical-scroll-proportion="2.0759494">
+          <caret line="99" column="5" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
           <folding>
             <element signature="e#1044#1045#0" expanded="true" />
             <element signature="e#1080#1081#0" expanded="true" />
-            <element signature="e#1684#2738#0" expanded="true" />
-            <element signature="e#2737#2738#0" expanded="true" />
+            <element signature="e#1584#2638#0" expanded="true" />
+            <element signature="e#2637#2638#0" expanded="true" />
           </folding>
         </state>
       </provider>
