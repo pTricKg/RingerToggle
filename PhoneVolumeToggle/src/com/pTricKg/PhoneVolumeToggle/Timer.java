@@ -53,14 +53,18 @@ public class Timer extends Activity{
         //timepicker setup
         timePicker = (TimePicker) findViewById(R.id.timePicker);
         timePicker.setIs24HourView(false);
-        //another button for timer
+
+        //button for timer
         Button timerButton = (Button) findViewById(R.id.button);
         timerButton.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
+
                 timePicker.clearFocus(); // remove system time for update
                 hour = timePicker.getCurrentHour(); // set input time
                 min = timePicker.getCurrentMinute();
+
                 //String amPm = DateUtils.getAMPMString(c.get(Calendar.AM_PM));
                 if (hour > 12) {
                     hour -= 12;
@@ -77,9 +81,12 @@ public class Timer extends Activity{
                 makeToast();
 
                 // activate alarm
+                c.set(Calendar.HOUR_OF_DAY, timePicker.getCurrentHour());
+                c.set(Calendar.MINUTE, timePicker.getCurrentMinute());
                 Intent myIntent = new Intent(Timer.this, MyBroadcastReceiver.class);
                 pendingIntent = PendingIntent.getBroadcast(Timer.this, 0, myIntent, 0);
                 alarmManager.set(AlarmManager.RTC, c.getTimeInMillis(), pendingIntent);
+
                 }
         });
     }
