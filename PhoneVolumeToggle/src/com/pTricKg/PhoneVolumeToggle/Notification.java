@@ -7,6 +7,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v4.app.NotificationCompat;
 
+import java.util.Calendar;
+
 
 /**
  * Created by pTricKg on 7/3/2016.
@@ -21,7 +23,7 @@ public class Notification extends IntentService {
 
 
     public void onHandleIntent(Intent intent) {
-        sendNotification("You asked for reminder!");
+        sendNotification("Letting you know about this!");
     }
 
     private void sendNotification(String msg) {

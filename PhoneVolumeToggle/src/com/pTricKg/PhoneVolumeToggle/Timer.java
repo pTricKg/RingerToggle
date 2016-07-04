@@ -6,6 +6,7 @@ import android.app.PendingIntent;
 import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.text.format.DateUtils;
+import android.widget.CompoundButton;
 import android.widget.TimePicker;
 import android.os.Bundle;
 import android.util.Log;
@@ -24,7 +25,7 @@ import org.w3c.dom.Text;
 /**
  * Created by pTricKg on 5/21/2016.
  */
-public class Timer extends Activity{
+public class Timer extends Activity {
 
     public static TimePicker timePicker;
     final Calendar c = Calendar.getInstance();
@@ -41,12 +42,13 @@ public class Timer extends Activity{
         return alarmActivity;
     }
 
-
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.timer);
+
+        //button for timer
+        ToggleButton timerButton = (ToggleButton) findViewById(R.id.button);
 
         alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
 
@@ -54,46 +56,54 @@ public class Timer extends Activity{
         timePicker = (TimePicker) findViewById(R.id.timePicker);
         timePicker.setIs24HourView(false);
 
-        //button for timer
-        Button timerButton = (Button) findViewById(R.id.button);
-        timerButton.setOnClickListener(new View.OnClickListener() {
+        onTimerButtonClicked(timerButton);
+    }
 
-            @Override
-            public void onClick(View v) {
 
-                timePicker.clearFocus(); // remove system time for update
-                hour = timePicker.getCurrentHour(); // set input time
-                min = timePicker.getCurrentMinute();
+    public void onTimerButtonClicked(View view) {
 
-                //String amPm = DateUtils.getAMPMString(c.get(Calendar.AM_PM));
-                if (hour > 12) {
-                    hour -= 12;
-                    ampm = "PM";
-                }
-                else ampm = "AM";
+        if (((ToggleButton) view).isChecked()) {
 
-                if (min < 10) {
-                    minuteString = "0" + min;
-                }
-                else{
-                    minuteString = "" + min;
-                }
-                makeToast();
+            Log.d("Should turn on", "start");
+            timePicker.clearFocus(); // remove system time for update
+            hour = timePicker.getCurrentHour(); // set input time
+            min = timePicker.getCurrentMinute();
 
-                // activate alarm
-                c.set(Calendar.HOUR_OF_DAY, timePicker.getCurrentHour());
-                c.set(Calendar.MINUTE, timePicker.getCurrentMinute());
-                Intent myIntent = new Intent(Timer.this, MyBroadcastReceiver.class);
-                pendingIntent = PendingIntent.getBroadcast(Timer.this, 0, myIntent, 0);
-                alarmManager.set(AlarmManager.RTC, c.getTimeInMillis(), pendingIntent);
+            if (hour > 12) {
+                hour -= 12;
+                ampm = "PM";
+            } else ampm = "AM";
 
-                }
-        });
+            if (min < 10) {
+                minuteString = "0" + min;
+            } else {
+                minuteString = "" + min;
+            }
+            makeToast();
+
+
+            // activate alarm
+            c.set(Calendar.HOUR_OF_DAY, timePicker.getCurrentHour());
+            c.set(Calendar.MINUTE, timePicker.getCurrentMinute());
+            Intent myIntent = new Intent(Timer.this, MyBroadcastReceiver.class);
+            pendingIntent = PendingIntent.getBroadcast(Timer.this, 0, myIntent, 0);
+            alarmManager.set(AlarmManager.RTC, c.getTimeInMillis(), pendingIntent);
+
+
+        } else {
+            Log.d("Should turn of here", "end");
+            ((ToggleButton) view).setChecked(false);
+            Intent myIntent = new Intent(Timer.this, MyBroadcastReceiver.class);
+            pendingIntent = PendingIntent.getBroadcast(Timer.this, 0, myIntent, 0);
+            alarmManager.set(AlarmManager.RTC, c.getTimeInMillis(), pendingIntent);
+            alarmManager.cancel(pendingIntent);
+        }
+
     }
 
     private void makeToast() {
 
-        Toast.makeText(this, "Time Set: " + hour + ":" + minuteString + ampm , Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Time Set: " + hour + ":" + minuteString + ampm, Toast.LENGTH_LONG).show();
     }
 
     public void onStart() {

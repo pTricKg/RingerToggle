@@ -4,18 +4,18 @@
     api-level="24"
     density="560dpi"
     format="7"
-    timestamp="97557366919344"
+    timestamp="108242978911116"
     token="-6634751395909433770" >
 
     <task
         name="javac"
-        duration="179" />
+        duration="142" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="9" />
+        duration="23" />
     <task
         name="verifier"
         duration="2" />
@@ -29,12 +29,12 @@
             location="C:\Users\pTricKg\git\RingerToggle\PhoneVolumeToggle\build\outputs\apk\PhoneVolumeToggle-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="96115156839797" >
+    <build timestamp="105296497621338" >
         <artifact
             location="C:\Users\pTricKg\git\RingerToggle\PhoneVolumeToggle\build\intermediates\res\resources-debug.ap_"
             type="RESOURCES" />
     </build>
-    <build timestamp="97557366919344" >
+    <build timestamp="108242978911116" >
         <artifact
             location="C:\Users\pTricKg\git\RingerToggle\PhoneVolumeToggle\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
             type="DEX" />

@@ -38,8 +38,8 @@ public class MyBroadcastReceiver extends WakefulBroadcastReceiver {
         Vibrator vibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
         vibrator.vibrate(2000);
 
-        Timer alarmActivity = Timer.instance();
-        //alarmActivity.setAlarmText("Alarm! Wake up! Wake up!");
+        //Timer alarmActivity = Timer.instance();
+       // alarmActivity.setAlarmText("Alarm! Wake up! Wake up!");
 
         // sound alarm
         Uri alarm = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM);
@@ -55,7 +55,6 @@ public class MyBroadcastReceiver extends WakefulBroadcastReceiver {
                 Notification.class.getName());
         startWakefulService(context, (intent.setComponent(comp)));
         setResultCode(Activity.RESULT_OK);
-
 
     }
 
